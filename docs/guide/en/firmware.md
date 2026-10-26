@@ -1,6 +1,6 @@
 # Firmware
 
-[Back to contents](README.md) · [Español](../es/firmware.md)
+[Back to contents](README.md) · [Español](../es/firmware.md) · [Русский](../ru/firmware.md)
 
 Firmware chips change how the implant behaves. The implant has **two slots**:
 

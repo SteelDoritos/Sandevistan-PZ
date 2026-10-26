@@ -1,6 +1,6 @@
 # Tu cuerpo
 
-[Volver al contenido](README.md) · [English](../en/your-body.md)
+[Volver al contenido](README.md) · [English](../en/your-body.md) · [Русский](../ru/your-body.md)
 
 El implante en sí nunca se rompe por usarlo de más. El que se rompe eres **tú**. Hay cuatro cosas que manejar: el **rechazo**, la
 **inmunodepresión**, la **carga neuronal** y, si la dejas crecer, la **cyberpsicosis**.

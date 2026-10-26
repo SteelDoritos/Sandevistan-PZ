@@ -1,6 +1,6 @@
 # Dónde encontrar todo
 
-[Volver al contenido](README.md) · [English](../en/where-to-find.md)
+[Volver al contenido](README.md) · [English](../en/where-to-find.md) · [Русский](../ru/where-to-find.md)
 
 La primera parte de esta página habla de los lugares en general, sin spoilers. Los lugares exactos, lo que hay en cada uno y dónde sale
 cada ítem vienen después, tras un [aviso de spoilers](#spoilers-desde-aquí).

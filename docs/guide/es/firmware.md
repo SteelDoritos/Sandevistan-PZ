@@ -1,6 +1,6 @@
 # Firmware
 
-[Volver al contenido](README.md) · [English](../en/firmware.md)
+[Volver al contenido](README.md) · [English](../en/firmware.md) · [Русский](../ru/firmware.md)
 
 Los chips de firmware cambian cómo se comporta el implante. El implante tiene **dos ranuras**:
 

@@ -48,7 +48,7 @@ o a un servidor y aprender del código. Contiene:
 
 | Carpeta | Qué |
 |---|---|
-| [`docs/guide/`](docs/guide/README.md) | La **guía del jugador** (inglés y español): cada sistema, los números y dónde encontrar todo (con los spoilers marcados). |
+| [`docs/guide/`](docs/guide/README.md) | La **guía del jugador** (inglés, español y ruso): cada sistema, los números y dónde encontrar todo (con los spoilers marcados). |
 | [`docs/how-it-works/`](docs/how-it-works/README.md) | **Cómo funciona por dentro** (en inglés): dónde corre cada parte del código, qué se guarda dónde, el ciclo de una activación, el multijugador y los add-ons Java. |
 | `mod/` | El Lua, los scripts de ítems y recetas, las opciones de sandbox, los `mod.info` y las traducciones de los cuatro mods, igual que en el Workshop. |
 | `java/` | El código fuente Java de los tres add-ons opcionales (se cargan con ZombieBuddy). |

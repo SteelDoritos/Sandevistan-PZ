@@ -1,6 +1,6 @@
 # Rasgos, opciones y complementos
 
-[Volver al contenido](README.md) · [English](../en/settings.md)
+[Volver al contenido](README.md) · [English](../en/settings.md) · [Русский](../ru/settings.md)
 
 ## Rasgos de personaje
 

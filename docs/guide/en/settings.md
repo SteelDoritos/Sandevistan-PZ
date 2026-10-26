@@ -1,6 +1,6 @@
 # Traits, settings and add-ons
 
-[Back to contents](README.md) · [Español](../es/settings.md)
+[Back to contents](README.md) · [Español](../es/settings.md) · [Русский](../ru/settings.md)
 
 ## Character traits
 

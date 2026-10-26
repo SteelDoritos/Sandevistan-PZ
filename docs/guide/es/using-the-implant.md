@@ -1,6 +1,6 @@
 # Usar el implante
 
-[Volver al contenido](README.md) · [English](../en/using-the-implant.md)
+[Volver al contenido](README.md) · [English](../en/using-the-implant.md) · [Русский](../ru/using-the-implant.md)
 
 ## Controles
 

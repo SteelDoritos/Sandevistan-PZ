@@ -1,6 +1,6 @@
 # Cirugía y crafteo
 
-[Volver al contenido](README.md) · [English](../en/surgery-and-crafting.md)
+[Volver al contenido](README.md) · [English](../en/surgery-and-crafting.md) · [Русский](../ru/surgery-and-crafting.md)
 
 Todo se hace desde menús de clic derecho o desde la pestaña **Sandevistan** del menú de crafteo. Las opciones que todavía no puedes
 usar aparecen en gris, y su tooltip dice qué falta.
@@ -31,6 +31,19 @@ cerca estés del nivel.
 - La **opción de sandbox *Guía con libros*** (Apagada / Suave / Normal / Dura) decide cuán dura es la penalización; la dificultad la
   elige por ti. En los presets nunca está apagada: es la forma de jugar solo.
 - Los libros son ítems normales: se encuentran, se compran o se sacan de una biblioteca, y leídos siguen enseñando sus niveles.
+- Cuando una acción pide dos habilidades (calibrar, reparar el Prototipo 04), los niveles que faltan de las dos **se suman**.
+- Una parte fabricada con los libros sale con la **calidad de tu nivel real** (ver [calidad de las partes](#prototipo-06-réplica-de-laboratorio)):
+  los libros te dejan fabricarla, no te hacen mejor.
+
+Cuánto cuesta cada nivel que falta, según la opción de sandbox:
+
+| *Guía con libros* | Tiempo extra | Probabilidad de éxito (cirugía, reparación, ensamblado) | Chance de que salga mal (calibrar, estudiar, fabricar) | Material que vuelve si falla un crafteo |
+|---|---|---|---|---|
+| Suave | +15 % por nivel | −5 puntos por nivel, nunca menos de 35 % | +6 % por nivel, hasta 40 % | 75 % |
+| **Normal** | +25 % por nivel | −8 puntos por nivel, nunca menos de 25 % | +10 % por nivel, hasta 60 % | 50 % |
+| Dura | +35 % por nivel | −10 puntos por nivel, nunca menos de 15 % | +14 % por nivel, hasta 75 % | 25 % |
+
+Explantar siempre conserva su propio piso de 45 %, sea cual sea la opción.
 
 ## Instalar un implante
 
@@ -51,6 +64,9 @@ En todos los casos necesitas una **aguja de sutura** (o, como al coser una herid
 - El **Arnés aplicador quirúrgico** viene con los implantes militares (dentro del estuche criogénico) y con el rasgo Instalador de
   callejón. Sin arnés hay que ir a ciegas, y a ciegas hace falta un **espejo**: el ítem en el inventario, o un espejo del mundo justo al
   lado (lo mismo que mira el juego para maquillarte).
+- **Por debajo del mínimo de Primeros Auxilios, con los libros:** la probabilidad del mínimo menos la penalización por nivel que falta.
+  Por ejemplo, una cirugía guiada con Primeros Auxilios 2 y el vol. 2: 75 − 16 = **59 %** en Normal. La cirugía además deja la herida
+  profunda leve.
 - **Una cirugía fallida nunca pierde el implante.** Solo sale un poco más gastado (+0,1×) y puedes intentarlo de nuevo.
 - Después de la cirugía sientes dolor. **Toma un inmunosupresor enseguida:** el aviso antes de operar te lo recuerda.
 - **Carpeta de laboratorio del estudiante:** si el cirujano lleva la carpeta completa (5/5), cualquier método sirve para un implante de
@@ -93,6 +109,8 @@ instalado (el tuyo o el de un jugador cercano).
 
 - Primeros Auxilios **4**, Electricidad **3** y un destornillador.
 - **Chatarra electrónica:** 1 por cada 0,1× de desgaste que se saca (al menos 1).
+- Con los libros, por debajo de cualquiera de los dos niveles, calibrar puede fallar (10 % por nivel que falta en Normal): se gasta la
+  chatarra y el desgaste queda igual.
 
 ## Reparar un Prototipo 04
 
@@ -100,7 +118,8 @@ El Prototipo 04 es un implante de laboratorio defectuoso. Clic derecho → *Repa
 
 - Electricidad **5**, Primeros Auxilios **4**, un destornillador, 2 de chatarra electrónica, una **Placa de interfaz neural**, una **Celda
   de energía** y una **Muestra de compuesto sintético**.
-- Probabilidad según Electricidad: 60 % con 5, 85 % con 7.
+- Probabilidad según Electricidad: 60 % con 5, 85 % con 7. Con los libros por debajo del nivel: 8 puntos menos por nivel que falta
+  (Electricidad y Primeros Auxilios juntos), nunca menos de 25 %. Por ejemplo, Electricidad 4 con el vol. 3 de Electricidad: **52 %**.
 - Sale con 1,2× y nunca se puede calibrar por debajo de eso.
 - Si falla pierdes el compuesto y la chatarra, y las partes vuelven más gastadas. El implante nunca se pierde.
 
@@ -114,7 +133,7 @@ Todas las recetas aparecen en la pestaña **Sandevistan** del menú de crafteo c
 | Inmunosupresor casero (3 dosis) | mortero, 2 analgésicos, 1 compuesto sintético, 0,1 L de alcohol | Cuaderno de laboratorio (síntesis), el rasgo Aprendiz de ripperdoc, o una opción de sandbox |
 | Tintura herbal inmunosupresora | mortero, 2 ajos silvestres, 2 salvias negras o consueldas, 0,1 L de agua o alcohol | Cuaderno de laboratorio (síntesis), el rasgo Aprendiz de ripperdoc, Recolección 3 o el rasgo Herbolario |
 | Black Lace casero (3 dosis) | 1 analgésico, 1 pastilla de cafeína, 0,1 L de alcohol | Informe de formulación del Black Lace, o el rasgo Ex-corpo |
-| Chip de firmware virgen | destornillador, 3 de chatarra electrónica, 1 cable; **Electricidad 4** | lo sabe cualquiera que tenga (o haya tenido) un implante |
+| Chip de firmware virgen | destornillador, 3 de chatarra electrónica, 1 cable; **Electricidad 4** (o los libros) | lo sabe cualquiera que tenga (o haya tenido) un implante |
 
 Para aprender de un cuaderno o un informe, **léelo** (como cualquier libro de habilidad).
 
@@ -124,7 +143,9 @@ Para aprender de un cuaderno o un informe, **léelo** (como cualquier libro de h
 
 **1. Aprende el diseño.** Clic derecho sobre un implante de laboratorio suelto (Prototipo 05 o 04) → *Estudiar*. Necesitas
 **Electricidad 4**, un destornillador y la **Carpeta de laboratorio del estudiante completa** (5/5) en el inventario. Estudiar un
-implante que funciona le suma +0,1× de desgaste. Aprendes las cinco partes, el ensamblado y los planos.
+implante que funciona le suma +0,1× de desgaste. Aprendes las cinco partes, el ensamblado y los planos. Por debajo de Electricidad 4
+con los libros, el estudio puede fallar (10 % por nivel que falta en Normal): desarmas el implante igual (+0,1× de desgaste) pero no
+aprendes nada.
 
 **2. Fabrica las cinco partes.** Cada una pide una sola habilidad, así en un servidor cada jugador se especializa y se pasan las
 partes.
@@ -137,19 +158,24 @@ partes.
 | Chasis del implante | ninguna | 6 tornillos, 4 chapas chicas o chatarra de metal |
 | Arnés de enlace neural | Costura 3 | aguja de coser, hilo o cordel, 2 tiras de cuero, 2 cables |
 
+Por debajo de la habilidad de una parte igual puedes fabricarla con los libros (10 % por nivel que falta de que salga mal; en Normal
+vuelve la mitad del material).
+
 La **calidad de cada parte** depende del nivel de quien la fabrica: de 1,5× con nivel 0 a 1,0× con nivel 10. La Soldadura cuenta como
 2 niveles más. El chasis siempre es 1,0×. Las partes que encuentras en el mundo son 1,3×. El implante terminado sale con el
 **promedio** de sus partes, con un grado: Fino (hasta 1,05×), Bueno (1,2×), Estándar (1,35×) o Tosco.
 
 **3. Ensambla.** *Fabricar Sandevistan Prototipo 06*: las cinco partes, 2 de chatarra electrónica, 1 compuesto sintético y un
 destornillador. **Primeros Auxilios 4**: 50 % (75 % con PA 6, 90 % con PA 8), +10 % con la Carpeta de laboratorio del estudiante
-completa. Si falla pierdes la chatarra y el compuesto, y las partes vuelven un poco más gastadas. Puedes intentarlo de nuevo.
+completa. Por debajo de Primeros Auxilios 4 con los libros: 8 puntos menos por nivel que falta, nunca menos de 25 % (Primeros Auxilios
+3 con el vol. 2: 42 %). Si falla pierdes la chatarra y el compuesto, y las partes vuelven un poco más gastadas. Puedes intentarlo de nuevo.
 
 ### Mk. II (réplica militar)
 
 **1. Aprende el diseño.** Clic derecho sobre un **implante militar que funcione** → *Estudiar el diseño militar*. Necesitas
 **Electricidad 6**, un destornillador y **los dos expedientes militares completos** en el inventario: el Expediente del investigador
-(12/12) y el Expediente del guardia del depósito (3/3). Los expedientes no se gastan.
+(12/12) y el Expediente del guardia del depósito (3/3). Los expedientes no se gastan. Por debajo de Electricidad 6, los libros
+funcionan igual que con el Prototipo 06: el estudio puede fallar.
 
 **2. Fabrica las partes.**
 
@@ -163,7 +189,9 @@ completa. Si falla pierdes la chatarra y el compuesto, y las partes vuelven un p
 | Arnés neural blindado | Costura 5 | aguja de coser, hilo grueso o cordel, 3 tiras de cuero, 3 cables, 2 de chatarra electrónica |
 
 **3. Ensambla.** *Fabricar Sandevistan Mk. II*: las cinco partes, 2 de chatarra electrónica, un destornillador y un estabilizador: un
-**Autoinyector de Black Lace** o un Black Lace casero **lleno**. **Primeros Auxilios 6**: 55 % (75 % con PA 8, 90 % con PA 10).
+**Autoinyector de Black Lace** o un Black Lace casero **lleno**. **Primeros Auxilios 6**: 55 % (75 % con PA 8, 90 % con PA 10). Por debajo de Primeros Auxilios 6 con los libros: 8 puntos menos por
+nivel que falta, nunca menos de 25 % (Primeros Auxilios 5 con el vol. 3: 47 %). Las partes siguen las mismas reglas y la misma calidad
+que las del Prototipo 06.
 
 ### Planos
 

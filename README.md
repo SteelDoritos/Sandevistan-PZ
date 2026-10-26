@@ -47,7 +47,7 @@ save or a server, and learn from the code. It contains:
 
 | Folder | What |
 |---|---|
-| [`docs/guide/`](docs/guide/README.md) | The **player guide** (English and Spanish): every system, the numbers, and where to find everything (spoilers marked). |
+| [`docs/guide/`](docs/guide/README.md) | The **player guide** (English, Spanish and Russian): every system, the numbers, and where to find everything (spoilers marked). |
 | [`docs/how-it-works/`](docs/how-it-works/README.md) | **How it works inside**: where each piece of code runs, what is saved where, the life of an activation, multiplayer, the Java add-ons. |
 | `mod/` | The four mods' Lua, item and recipe scripts, sandbox options, `mod.info` and translations, exactly as published on the Workshop. |
 | `java/` | Java source of the three optional add-ons (they load through ZombieBuddy). |

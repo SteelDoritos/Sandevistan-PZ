@@ -1,6 +1,6 @@
 # Sandevistan: Guía del jugador
 
-[English](../en/README.md)
+[English](../en/README.md) · [Русский](../ru/README.md)
 
 Una guía del mod Sandevistan para Project Zomboid (Build 42): cómo funciona cada sistema y cómo conseguir todo. Va más a fondo que
 la guía de campo que recibes en el juego.

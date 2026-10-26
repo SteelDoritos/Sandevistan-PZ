@@ -1,6 +1,6 @@
 # Your body
 
-[Back to contents](README.md) · [Español](../es/your-body.md)
+[Back to contents](README.md) · [Español](../es/your-body.md) · [Русский](../ru/your-body.md)
 
 The implant itself never breaks from overuse. **You** do. There are four things to manage: **rejection**, **immunodepression**,
 **neural load** and, if you let it go, **cyberpsychosis**.

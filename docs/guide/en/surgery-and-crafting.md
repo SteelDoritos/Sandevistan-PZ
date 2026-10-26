@@ -1,6 +1,6 @@
 # Surgery and crafting
 
-[Back to contents](README.md) · [Español](../es/surgery-and-crafting.md)
+[Back to contents](README.md) · [Español](../es/surgery-and-crafting.md) · [Русский](../ru/surgery-and-crafting.md)
 
 Everything here is done from right-click menus or from the **Sandevistan** tab of the crafting menu. Options you can't use yet
 appear greyed out, and their tooltip lists what is missing.
@@ -31,6 +31,19 @@ level.
 - The **sandbox option *Guided by books*** (Off / Gentle / Normal / Harsh) sets how harsh the penalty is; the difficulty preset picks
   it for you. It is never off in the presets: it is the way to play alone.
 - The books are normal items: you can find them, buy them or take them from a library, and they still teach their levels when read.
+- When an action asks for two skills (calibrating, repairing the Prototype 04), the missing levels of both **add up**.
+- A part built with the books comes out with the **quality of your real level** (see [part quality](#prototype-06-lab-replica)):
+  the books let you build it, they don't make you better at it.
+
+How much each missing level costs, by the sandbox option:
+
+| *Guided by books* | Extra time | Success chance (surgery, repair, assembly) | Chance to go wrong (calibrate, study, craft) | Material back when a craft fails |
+|---|---|---|---|---|
+| Gentle | +15 % per level | −5 points per level, never below 35 % | +6 % per level, up to 40 % | 75 % |
+| **Normal** | +25 % per level | −8 points per level, never below 25 % | +10 % per level, up to 60 % | 50 % |
+| Harsh | +35 % per level | −10 points per level, never below 15 % | +14 % per level, up to 75 % | 25 % |
+
+Explanting always keeps its own floor of 45 %, whatever the option.
 
 ## Installing an implant
 
@@ -51,6 +64,8 @@ accept. In every case you need a **suture needle** (or, as when stitching a woun
 - The **Surgical Applicator Harness** comes with the military implants (inside the cryogenic case) and with the Backstreet Installer
   trait. Without a harness you have to go blind, and blind means **a mirror**: the item in your inventory, or a mirror in the world
   right next to you (the same thing the game checks to put on makeup).
+- **Below the minimum First Aid, with the books:** the chance at the minimum minus the penalty per missing level. For example, a
+  guided surgery at First Aid 2 with First Aid vol. 2: 75 − 16 = **59 %** on Normal. The surgery also leaves the mild deep wound.
 - **A failed surgery never loses the implant.** It just comes out a little more worn (+0.1×) and you can try again.
 - After surgery you feel pain. **Take an immunosuppressant right away:** the warning before the operation reminds you.
 - **Student Lab Binder:** if the surgeon carries the complete binder (5/5), any method works on a **lab** implant from First Aid 1.
@@ -90,6 +105,7 @@ nearby player's).
 
 - First Aid **4**, Electrical **3**, a screwdriver.
 - **Electronics scrap:** 1 for every 0.1× of wear removed (at least 1).
+- With the books below either level, calibrating can fail (10 % per missing level on Normal): the scrap is spent and the wear stays.
 
 ## Repairing a Prototype 04
 
@@ -97,7 +113,8 @@ Prototype 04 is a defective lab implant. Right-click it → *Repair Prototype 04
 
 - Electrical **5**, First Aid **4**, a screwdriver, 2 electronics scrap, a **Neural Interface Board**, a **Power Cell** and a **Synthetic
   Compound Sample**.
-- Chance by Electrical: 60 % at 5, 85 % at 7.
+- Chance by Electrical: 60 % at 5, 85 % at 7. With the books below the level: 8 points less per missing level (Electrical and First
+  Aid together), never below 25 %. For example, Electrical 4 with Electrical vol. 3: **52 %**.
 - It comes out at 1.2× and can never be calibrated below that.
 - If it fails you lose the compound and the scrap, and the parts come back more worn. The implant is never lost.
 
@@ -111,7 +128,7 @@ All recipes show up in the **Sandevistan** tab of the crafting menu once you kno
 | Homemade Immunosuppressant (3 doses) | mortar and pestle, 2 painkillers, 1 synthetic compound, 0.1 L of alcohol | Lab Notebook (Synthesis), the Ripperdoc's Apprentice trait, or a sandbox option |
 | Herbal Immunosuppressant Tincture | mortar and pestle, 2 wild garlic, 2 black sage or comfrey, 0.1 L of water or alcohol | Lab Notebook (Synthesis), the Ripperdoc's Apprentice trait, Foraging 3 or the Herbalist trait |
 | Homemade Black Lace (3 doses) | 1 painkiller, 1 caffeine pill, 0.1 L of alcohol | Black Lace Formulation Report, or the Ex-Corpo trait |
-| Blank firmware chip | screwdriver, 3 electronics scrap, 1 wire; **Electrical 4** | known by anyone who has (or had) an implant |
+| Blank firmware chip | screwdriver, 3 electronics scrap, 1 wire; **Electrical 4** (or the books) | known by anyone who has (or had) an implant |
 
 To learn from a notebook or report, **read** it (like any skill book).
 
@@ -121,7 +138,8 @@ To learn from a notebook or report, **read** it (like any skill book).
 
 **1. Learn the design.** Right-click a loose lab implant (Prototype 05 or 04) → *Study*. You need **Electrical 4**, a screwdriver and
 the **complete Student Lab Binder** (5/5) in your inventory. Studying a working implant wears it +0.1×. You learn the five parts, the
-assembly and the blueprints.
+assembly and the blueprints. Below Electrical 4 with the books, the study can fail (10 % per missing level on Normal): you take the
+implant apart anyway (+0.1× wear) but learn nothing.
 
 **2. Build the five parts.** Each one needs a single skill, so on a server each player can specialize and trade parts.
 
@@ -133,19 +151,23 @@ assembly and the blueprints.
 | Implant Chassis | none | 6 screws, 4 small sheet metal or scrap metal |
 | Neural Link Harness | Tailoring 3 | sewing needle, thread or twine, 2 leather strips, 2 wire |
 
+Below a part's skill you can still build it with the books (10 % per missing level that it goes wrong; you get half the material
+back on Normal).
+
 **Part quality** depends on the crafter's skill level: from 1.5× at level 0 down to 1.0× at level 10. Metalworking counts as 2
 levels higher. The chassis is always 1.0×. Parts you find in the world are 1.3×. The finished implant gets the **average** of its
 parts, graded Fine (up to 1.05×), Good (1.2×), Standard (1.35×) or Crude.
 
 **3. Assemble.** *Build Sandevistan Prototype 06*: the five parts, 2 electronics scrap, 1 synthetic compound and a screwdriver.
-**First Aid 4**: 50 % (75 % at FA 6, 90 % at FA 8), +10 % with the complete Student Lab Binder. If it fails you lose the scrap and
+**First Aid 4**: 50 % (75 % at FA 6, 90 % at FA 8), +10 % with the complete Student Lab Binder. Below First Aid 4 with the books: 8 points less per missing level, never below 25 %
+(First Aid 3 with vol. 2: 42 %). If it fails you lose the scrap and
 the compound, and the parts come back a little more worn. You can try again.
 
 ### Mk. II (military replica)
 
 **1. Learn the design.** Right-click a **working military implant** → *Study the military design*. You need **Electrical 6**, a
 screwdriver and **both military dossiers complete** in your inventory: the Researcher Dossier (12/12) and the Depot Guard Dossier
-(3/3). The dossiers are not used up.
+(3/3). The dossiers are not used up. Below Electrical 6, the books work as for the Prototype 06: the study can fail.
 
 **2. Build the parts.**
 
@@ -159,7 +181,8 @@ screwdriver and **both military dossiers complete** in your inventory: the Resea
 | Shielded Neural Harness | Tailoring 5 | sewing needle, heavy thread or twine, 3 leather strips, 3 wire, 2 electronics scrap |
 
 **3. Assemble.** *Build Sandevistan Mk. II*: the five parts, 2 electronics scrap, a screwdriver and a stabilizer: a **Black Lace
-Autoinjector** or a **full** homemade Black Lace. **First Aid 6**: 55 % (75 % at FA 8, 90 % at FA 10).
+Autoinjector** or a **full** homemade Black Lace. **First Aid 6**: 55 % (75 % at FA 8, 90 % at FA 10). Below First Aid 6 with the books: 8 points less per missing level, never below
+25 % (First Aid 5 with vol. 3: 47 %). The parts follow the same rules and quality as the Prototype 06.
 
 ### Blueprints
 

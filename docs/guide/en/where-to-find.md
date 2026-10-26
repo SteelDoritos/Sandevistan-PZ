@@ -1,6 +1,6 @@
 # Where to find everything
 
-[Back to contents](README.md) · [Español](../es/where-to-find.md)
+[Back to contents](README.md) · [Español](../es/where-to-find.md) · [Русский](../ru/where-to-find.md)
 
 The first part of this page talks about the places in general, with no spoilers. The exact places, what each one holds and where every
 item turns up come later, after a [spoiler warning](#spoilers-from-here-on).
