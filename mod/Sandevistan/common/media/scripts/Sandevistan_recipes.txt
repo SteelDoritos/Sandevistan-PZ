@@ -1,0 +1,500 @@
+module Sandevistan
+{
+    imports { Base }
+
+    craftRecipe MakeSyntheticCompound
+    {
+        timedAction = MixingMortarPestle,
+        time = 150,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = Sandevistan,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 3 [Base.Pills],
+            item 1 [Base.Coldpack;Base.BakingSoda],
+            item 1 [*],
+            -fluid 0.1 [RubbingAlcohol;Vodka;Whiskey],
+        }
+        outputs
+        {
+            item 1 Sandevistan.SyntheticCompoundSample,
+        }
+    }
+
+    craftRecipe MakeHomemadeImmunosuppressant
+    {
+        timedAction = MixingMortarPestle,
+        time = 100,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = Sandevistan,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 2 [Base.Pills],
+            item 1 [Sandevistan.SyntheticCompoundSample],
+            item 1 [*],
+            -fluid 0.1 [RubbingAlcohol;Vodka;Whiskey],
+        }
+        outputs
+        {
+            item 1 Sandevistan.ImmunosuppressantCraftedPack,
+        }
+    }
+
+    craftRecipe MakeHerbalImmunosuppressant
+    {
+        timedAction = MixingMortarPestle,
+        time = 150,
+        NeedToBeLearn = true,
+        AutoLearnAny = PlantScavenging:3,
+        Tags = AnySurfaceCraft;Health,
+        category = Sandevistan,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep,
+            item 2 [Base.WildGarlic2],
+            item 2 [Base.BlackSage;Base.Comfrey],
+            item 1 [*],
+            -fluid 0.1 [Water;RubbingAlcohol;Vodka;Whiskey],
+        }
+        outputs
+        {
+            item 1 Sandevistan.ImmunosuppressantHerbalPack,
+        }
+    }
+
+    craftRecipe MakeHomemadeKerenzikov
+    {
+        timedAction = Making,
+        time = 100,
+        NeedToBeLearn = true,
+        Tags = InHandCraft;Health,
+        category = Sandevistan,
+        inputs
+        {
+            item 1 [Base.Pills],
+            item 1 [Base.PillsVitamins],
+            item 1 [*],
+            -fluid 0.1 [RubbingAlcohol;Vodka;Whiskey],
+        }
+        outputs
+        {
+            item 1 Sandevistan.KerenzikovCrafted,
+        }
+    }
+
+    /* v0.1.30 (43): especialidades. Cada parte pide UNA habilidad (placa y celda Electrical, regulador Soldadura) y el ensamblado solo First Aid: en un
+       servidor cada jugador sube la suya y se pasan las partes. */
+    /* v0.1.30 (24): el Prototipo 06 se ensambla con tres partes. Cada parte tiene su receta y su habilidad; la calidad que sale (guardada en el item)
+       la calcula SandevistanRecipeCode.onCreatePart segun el nivel de quien la arma. Las tres se ensenan al estudiar el diseno (`NeedToBeLearn`). */
+    craftRecipe BuildNeuralBoard
+    {
+        timedAction = MakingElectrical,
+        time = 600,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildNeuralBoard,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Electricity:15,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 4 [Base.ElectronicsScrap],
+            item 2 [Base.Wire;Base.ElectricWire],
+        }
+        outputs
+        {
+            item 1 Sandevistan.NeuralInterfaceBoard,
+        }
+    }
+
+    craftRecipe BuildThermalRegulator
+    {
+        timedAction = MakingElectrical,
+        time = 500,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildThermalRegulator,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = MetalWelding:15,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 2 [Base.SmallSheetMetal;Base.UnusableMetal;Base.AluminumScrap],
+            item 1 [Base.Wire;Base.ElectricWire],
+            item 2 [Base.ElectronicsScrap],
+        }
+        outputs
+        {
+            item 1 Sandevistan.ThermalRegulator,
+        }
+    }
+
+    craftRecipe BuildPowerCell
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildPowerCell,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Electricity:10,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 1 [Base.Battery] flags[ItemCount] mode:destroy,
+            item 1 [Base.Wire;Base.ElectricWire],
+            item 2 [Base.ElectronicsScrap],
+        }
+        outputs
+        {
+            item 1 Sandevistan.PowerCell,
+        }
+    }
+
+    /* v0.1.30 (68): dos partes mas por diseno, cada una con su propia especialidad: el CHASIS (carcasa y tornillos; desde la (122) sin habilidad y con mas materiales) y el ARNES (Costura: el
+       cableado flexible que va a la columna). El ensamblado pasa a pedir las cinco. */
+    craftRecipe BuildImplantChassis
+    {
+        timedAction = MakingElectrical,
+        time = 700,
+        NeedToBeLearn = true,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 6 [Base.Screws],
+            item 4 [Base.SmallSheetMetal;Base.UnusableMetal;Base.AluminumScrap],
+        }
+        outputs
+        {
+            item 1 Sandevistan.ImplantChassis,
+        }
+    }
+
+    craftRecipe BuildNeuralLinkHarness
+    {
+        timedAction = SewingCloth,
+        time = 400,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildNeuralLinkHarness,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Tailoring:15,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:thread;base:twine],
+            item 2 [Base.LeatherStrips],
+            item 2 [Base.Wire;Base.ElectricWire],
+        }
+        outputs
+        {
+            item 1 Sandevistan.NeuralLinkHarness,
+        }
+    }
+
+    craftRecipe BuildPrototype06
+    {
+        timedAction = MakingElectrical,
+        time = 1200,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildPrototype06,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreateProto06,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Doctor:10,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 1 [Sandevistan.NeuralInterfaceBoard],
+            item 1 [Sandevistan.ThermalRegulator],
+            item 1 [Sandevistan.PowerCell],
+            item 1 [Sandevistan.ImplantChassis],
+            item 1 [Sandevistan.NeuralLinkHarness],
+            item 2 [Base.ElectronicsScrap],
+            item 1 [Sandevistan.SyntheticCompoundSample],
+        }
+        outputs
+        {
+            item 1 Sandevistan.SandevistanLab,
+        }
+    }
+
+    /* v0.1.30 (43)/(44): Mark II (replica militar; internamente 07). Mismos tres roles con habilidades mas altas. El regulador lleva bolsas de frio (gel) de
+       vanilla; el microchip militar se FABRICA con mucho trabajo (BuildMilChip) y aparece con muy poca chance en el mundo. Estabilizador: dos Kerenzikov. */
+    craftRecipe BuildMilChip
+    {
+        timedAction = MakingElectrical,
+        time = 2400,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildMilChip,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreateGuided,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Electricity:25,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 12 [Base.ElectronicsScrap],
+            item 3 [Base.Wire;Base.ElectricWire],
+        }
+        outputs
+        {
+            item 1 Sandevistan.MilSpecChip,
+        }
+    }
+
+    craftRecipe BuildMilLattice
+    {
+        timedAction = MakingElectrical,
+        time = 800,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildMilLattice,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Electricity:20,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 6 [Base.ElectronicsScrap],
+            item 2 [Base.Wire;Base.ElectricWire],
+            item 1 [Sandevistan.MilSpecChip],
+        }
+        outputs
+        {
+            item 1 Sandevistan.MilNeuralLattice,
+        }
+    }
+
+    craftRecipe BuildCryoRegulator
+    {
+        timedAction = MakingElectrical,
+        time = 700,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildCryoRegulator,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = MetalWelding:20,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 2 [Base.SmallSheetMetal;Base.UnusableMetal;Base.AluminumScrap],
+            item 1 [Base.Wire;Base.ElectricWire],
+            item 2 [Base.ElectronicsScrap],
+            item 3 [Base.Coldpack],
+        }
+        outputs
+        {
+            item 1 Sandevistan.CryoRegulator,
+        }
+    }
+
+    craftRecipe BuildHighDensityCell
+    {
+        timedAction = MakingElectrical,
+        time = 600,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildHighDensityCell,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Electricity:15,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 2 [Base.Battery] flags[ItemCount] mode:destroy,
+            item 2 [Base.Wire;Base.ElectricWire],
+            item 2 [Base.ElectronicsScrap],
+        }
+        outputs
+        {
+            item 1 Sandevistan.HighDensityCell,
+        }
+    }
+
+    craftRecipe BuildMilChassis
+    {
+        timedAction = MakingElectrical,
+        time = 900,
+        NeedToBeLearn = true,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 8 [Base.Screws],
+            item 5 [Base.SmallSheetMetal;Base.AluminumScrap],
+        }
+        outputs
+        {
+            item 1 Sandevistan.MilChassis,
+        }
+    }
+
+    craftRecipe BuildMilLinkHarness
+    {
+        timedAction = SewingCloth,
+        time = 600,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildMilLinkHarness,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreatePart,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:heavythread;base:twine],
+            item 3 [Base.LeatherStrips],
+            item 3 [Base.Wire;Base.ElectricWire],
+            item 2 [Base.ElectronicsScrap],
+        }
+        outputs
+        {
+            item 1 Sandevistan.MilLinkHarness,
+        }
+    }
+
+    /* (122) El estabilizador: 1 dosis del autoinyector militar (en un drenable `item N` gasta usos), o un Black Lace casero LLENO y entero
+       (flags ItemCount e IsFull). Antes `item 2` del uno o el otro: dos dosis. Dos recetas porque una sola no puede pedir A o B con flags distintos. */
+    craftRecipe BuildPrototype07
+    {
+        timedAction = MakingElectrical,
+        time = 1800,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildPrototype07,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreateProto07,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Doctor:20,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 1 [Sandevistan.MilNeuralLattice],
+            item 1 [Sandevistan.CryoRegulator],
+            item 1 [Sandevistan.HighDensityCell],
+            item 1 [Sandevistan.MilChassis],
+            item 1 [Sandevistan.MilLinkHarness],
+            item 2 [Base.ElectronicsScrap],
+            item 1 [Sandevistan.KerenzikovMilitary],
+        }
+        outputs
+        {
+            item 1 Sandevistan.SandevistanMilitary,
+        }
+    }
+
+    craftRecipe BuildPrototype07Homemade
+    {
+        timedAction = MakingElectrical,
+        time = 1800,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildPrototype07Homemade,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreateProto07,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Doctor:20,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 1 [Sandevistan.MilNeuralLattice],
+            item 1 [Sandevistan.CryoRegulator],
+            item 1 [Sandevistan.HighDensityCell],
+            item 1 [Sandevistan.MilChassis],
+            item 1 [Sandevistan.MilLinkHarness],
+            item 2 [Base.ElectronicsScrap],
+            item 1 [Sandevistan.KerenzikovCrafted] flags[ItemCount;IsFull] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Sandevistan.SandevistanMilitary,
+        }
+    }
+
+    /* v0.1.30 (43): planos. Se redactan sabiendo el diseno (estudiandolo o leyendo unos planos): papel y algo para escribir. */
+    craftRecipe WriteBlueprint06
+    {
+        timedAction = Making,
+        time = 600,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        inputs
+        {
+            item 1 [Base.Pen;Base.BluePen;Base.RedPen;Base.Pencil] mode:keep,
+            item 3 [Base.SheetPaper2],
+        }
+        outputs
+        {
+            item 1 Sandevistan.SandevistanBlueprint06,
+        }
+    }
+
+    craftRecipe WriteBlueprint07
+    {
+        timedAction = Making,
+        time = 900,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        inputs
+        {
+            item 1 [Base.Pen;Base.BluePen;Base.RedPen;Base.Pencil] mode:keep,
+            item 5 [Base.SheetPaper2],
+        }
+        outputs
+        {
+            item 1 Sandevistan.SandevistanBlueprint07,
+        }
+    }
+
+    /* v0.1.30 (85): firmware. El chip virgen y el terminal portatil se FABRICAN (Electricidad: lo fisico); escribir un programa en la computadora o en el terminal no
+       pide Electricidad (es codigo: manda la costumbre con el implante, ver Config.Firmware.Write). Los dos los sabe quien tiene un implante (Medical.knows("firmware")). */
+    craftRecipe BuildFirmwareChip
+    {
+        timedAction = MakingElectrical,
+        time = 500,
+        NeedToBeLearn = true,
+        OnTest = SandevistanRecipeCode.guide_BuildFirmwareChip,
+        Tooltip = Tooltip_Sandevistan_BookGuide,
+        OnCreate = SandevistanRecipeCode.onCreateGuided,
+        Tags = AnySurfaceCraft,
+        category = Sandevistan,
+        xpAward = Electricity:15,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+            item 3 [Base.ElectronicsScrap],
+            item 1 [Base.Wire;Base.ElectricWire],
+        }
+        outputs
+        {
+            item 1 Sandevistan.FwBlank,
+        }
+    }
+}

@@ -1,0 +1,12 @@
+id=SandevistanPsychosis
+name=Sandevistan - Cyberpsychosis hallucinations (optional)
+author=SteelDoritos
+modversion=0.8
+description=Optional add-on for Sandevistan: the Java side of cyberpsychosis. Fake zombies only you can see, your own double, figures at the edge of your view, corrupted text with hallucinated messages, glitching moodles, people who look like the other side, camera shake and the screen effects of the episodes. Everything is local to your client. Needs ZombieBuddy (Java). Sandevistan works the same without it (cyberpsychosis keeps its Lua effects). For the hallucinations in Viewpoint's 3D camera, also enable Sandevistan - Afterimages with real pose.
+icon=icon.png
+versionMin=42.21
+require=\Sandevistan,\ZombieBuddy
+loadModAfter=Sandevistan
+javaJarFile=media/java/client/SandevistanPsychosis.jar
+javaPkgName=sandevistan.psychosis
+ZBVersionMin=2.3.0

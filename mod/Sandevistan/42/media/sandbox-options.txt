@@ -1,0 +1,483 @@
+VERSION = 1,
+
+option Sandevistan.Preset
+{
+    type = enum,
+    numValues = 6,
+    default = 1,
+    page = Sandevistan,
+    translation = Sandevistan_Preset,
+    valueTranslation = Sandevistan_Preset,
+}
+
+option Sandevistan.CharacterTraits
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_CharacterTraits,
+}
+
+option Sandevistan.ALifeImplants
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_ALifeImplants,
+}
+
+option Sandevistan.FieldGuideOnInstall
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_FieldGuideOnInstall,
+}
+
+option Sandevistan.FirearmActionSpeed
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_FirearmActionSpeed,
+}
+
+option Sandevistan.FirmwareEnabled
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_FirmwareEnabled,
+}
+
+option Sandevistan.FirmwareAllKnown
+{
+    type = boolean,
+    default = false,
+    page = Sandevistan,
+    translation = Sandevistan_FirmwareAllKnown,
+}
+
+option Sandevistan.HeatRateMultiplier
+{
+    type = double,
+    min = 0.3,
+    max = 3.0,
+    default = 1.0,
+    page = Sandevistan,
+    translation = Sandevistan_HeatRateMultiplier,
+}
+
+option Sandevistan.AmbientCooling
+{
+    type = enum,
+    numValues = 3,
+    default = 2,
+    page = Sandevistan,
+    translation = Sandevistan_AmbientCooling,
+    valueTranslation = Sandevistan_AmbientCooling,
+}
+
+option Sandevistan.StaminaDebt
+{
+    type = enum,
+    numValues = 3,
+    default = 2,
+    page = Sandevistan,
+    translation = Sandevistan_StaminaDebt,
+    valueTranslation = Sandevistan_StaminaDebt,
+}
+
+option Sandevistan.ImplantOverride
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_ImplantOverride,
+}
+
+option Sandevistan.Stopgaps
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_Stopgaps,
+}
+
+option Sandevistan.Craving
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_Craving,
+}
+
+option Sandevistan.BookGuide
+{
+    type = enum,
+    numValues = 4,
+    default = 3,
+    page = Sandevistan,
+    translation = Sandevistan_BookGuide,
+    valueTranslation = Sandevistan_BookGuide,
+}
+
+option Sandevistan.ImmunoDurationMultiplier
+{
+    type = double,
+    min = 0.25,
+    max = 4.0,
+    default = 1.0,
+    page = Sandevistan,
+    translation = Sandevistan_ImmunoDurationMultiplier,
+}
+
+option Sandevistan.Immunodepression
+{
+    type = enum,
+    numValues = 4,
+    default = 3,
+    page = Sandevistan,
+    translation = Sandevistan_Immunodepression,
+    valueTranslation = Sandevistan_Immunodepression,
+}
+
+option Sandevistan.PartsLootMultiplier
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = Sandevistan,
+    translation = Sandevistan_PartsLootMultiplier,
+}
+
+option Sandevistan.UseSpatialSlowInSP
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_UseSpatialSlowInSP,
+}
+
+option Sandevistan.CatastrophicFailureChance
+{
+    type = double,
+    min = 0.0,
+    max = 1.0,
+    default = 0.0,
+    page = Sandevistan,
+    translation = Sandevistan_CatastrophicFailureChance,
+}
+
+option Sandevistan.CyberpsychosisDeathChance
+{
+    type = double,
+    min = 0.0,
+    max = 1.0,
+    default = 0.01,
+    page = Sandevistan,
+    translation = Sandevistan_CyberpsychosisDeathChance,
+}
+
+option Sandevistan.Hallucinations
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_Hallucinations,
+}
+
+option Sandevistan.RejectionRateMultiplier
+{
+    type = double,
+    min = 0.1,
+    max = 5.0,
+    default = 1.0,
+    page = Sandevistan,
+    translation = Sandevistan_RejectionRateMultiplier,
+}
+
+option Sandevistan.CraftedRecipeKnown
+{
+    type = boolean,
+    default = false,
+    page = Sandevistan,
+    translation = Sandevistan_CraftedRecipeKnown,
+}
+
+option Sandevistan.XPMultiplier
+{
+    type = double,
+    min = 0.1,
+    max = 10.0,
+    default = 1.0,
+    page = Sandevistan,
+    translation = Sandevistan_XPMultiplier,
+}
+
+option Sandevistan.CivilExSubjectChance
+{
+    type = double,
+    min = 0.0,
+    max = 1.0,
+    default = 0.60,
+    page = Sandevistan,
+    translation = Sandevistan_CivilExSubjectChance,
+}
+
+option Sandevistan.FastShamblerChance
+{
+    type = double,
+    min = 0.0,
+    max = 1.0,
+    default = 1.0,
+    page = Sandevistan,
+    translation = Sandevistan_FastShamblerChance,
+}
+
+option Sandevistan.ExSubjectRespawn
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_ExSubjectRespawn,
+}
+
+option Sandevistan.ExSubjectRespawnChance
+{
+    type = double,
+    min = 0.0,
+    max = 1.0,
+    default = 0.05,
+    page = Sandevistan,
+    translation = Sandevistan_ExSubjectRespawnChance,
+}
+
+option Sandevistan.ExSubjectRespawnMax
+{
+    type = integer,
+    min = 0,
+    max = 20,
+    default = 3,
+    page = Sandevistan,
+    translation = Sandevistan_ExSubjectRespawnMax,
+}
+
+option Sandevistan.MilitaryCryoBoxCount
+{
+    type = integer,
+    min = 1,
+    max = 2,
+    default = 2,
+    page = Sandevistan,
+    translation = Sandevistan_MilitaryCryoBoxCount,
+}
+
+option Sandevistan.Prototype04Enabled
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_Prototype04Enabled,
+}
+
+option Sandevistan.Prototype06Enabled
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_Prototype06Enabled,
+}
+
+option Sandevistan.Prototype07Enabled
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_Prototype07Enabled,
+}
+
+option Sandevistan.LabCampus
+{
+    type = enum,
+    numValues = 4,
+    default = 1,
+    page = Sandevistan,
+    translation = Sandevistan_LabCampus,
+    valueTranslation = Sandevistan_LabCampus,
+}
+
+option Sandevistan.PsychosisIntensity
+{
+    type = enum,
+    numValues = 4,
+    default = 3,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisIntensity,
+    valueTranslation = Sandevistan_PsychosisIntensity,
+}
+
+option Sandevistan.PsychosisAudio
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisAudio,
+}
+
+option Sandevistan.PsychosisThreatVision
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisThreatVision,
+}
+
+option Sandevistan.PsychosisTimeGlitch
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisTimeGlitch,
+}
+
+option Sandevistan.PsychosisMisfire
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisMisfire,
+}
+
+option Sandevistan.PsychosisBlackouts
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisBlackouts,
+}
+
+option Sandevistan.PsychosisBerserk
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisBerserk,
+}
+
+option Sandevistan.PsychosisNightTerrors
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisNightTerrors,
+}
+
+option Sandevistan.PsychosisFakeZombies
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisFakeZombies,
+}
+
+option Sandevistan.PsychosisEchoes
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisEchoes,
+}
+
+option Sandevistan.PsychosisTextGlitch
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisTextGlitch,
+}
+
+option Sandevistan.PsychosisMessages
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisMessages,
+}
+
+option Sandevistan.PsychosisPhantomFigures
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisPhantomFigures,
+}
+
+option Sandevistan.PsychosisDisguise
+{
+    type = enum,
+    numValues = 4,
+    default = 3,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisDisguise,
+    valueTranslation = Sandevistan_PsychosisDisguise,
+}
+
+option Sandevistan.PsychosisOverload
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_PsychosisOverload,
+}
+
+option Sandevistan.OverdriveHeatCap
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_OverdriveHeatCap,
+}
+
+option Sandevistan.CyberpsychosisRemission
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_CyberpsychosisRemission,
+}
+
+option Sandevistan.SlowZombieAnimations
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_SlowZombieAnimations,
+}
+
+option Sandevistan.FastPlayerAnimations
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_FastPlayerAnimations,
+}
+
+option Sandevistan.MPHitRateGuard
+{
+    type = boolean,
+    default = true,
+    page = Sandevistan,
+    translation = Sandevistan_MPHitRateGuard,
+}
+
+option Sandevistan.SlowRadius
+{
+    type = integer,
+    min = 8,
+    max = 30,
+    default = 16,
+    page = Sandevistan,
+    translation = Sandevistan_SlowRadius,
+}

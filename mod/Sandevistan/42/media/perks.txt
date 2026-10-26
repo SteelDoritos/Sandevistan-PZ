@@ -1,0 +1,18 @@
+VERSION = 1,
+
+perk SandevistanAdaptation
+{
+    parent = Combat,
+    translation = SandevistanAdaptation,
+    passive = false,
+    xp1 = 100,
+    xp2 = 250,
+    xp3 = 500,
+    xp4 = 1000,
+    xp5 = 1800,
+    xp6 = 3000,
+    xp7 = 4500,
+    xp8 = 6500,
+    xp9 = 9000,
+    xp10 = 12000,
+}

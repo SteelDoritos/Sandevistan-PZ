@@ -1,0 +1,12 @@
+id=SandevistanViewpoint
+name=Sandevistan - Afterimages with real pose (optional)
+author=SteelDoritos
+modversion=0.8
+description=Optional add-on for Sandevistan: draws the afterimages as real poses (the character skeleton at that moment) instead of the 2D silhouettes, in the normal isometric camera and, if installed, inside Viewpoint's 3D camera (first and third person). With Viewpoint it also freezes the 3D rain and snow during time dilation. Needs ZombieBuddy (Java). Sandevistan works the same without it.
+icon=icon.png
+versionMin=42.21
+require=\Sandevistan,\ZombieBuddy
+loadModAfter=Sandevistan
+javaJarFile=media/java/client/SandevistanViewpoint.jar
+javaPkgName=sandevistan.viewpoint
+ZBVersionMin=2.3.0

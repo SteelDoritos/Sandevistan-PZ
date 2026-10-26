@@ -1,0 +1,235 @@
+module Base
+{
+    /* Sonidos placeholder generados con tools/gen_sounds.py (si existe sound/<Nombre>.ogg se usa ese y no se genera el WAV). */
+
+    sound SandevistanActivate
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanActivate.ogg,
+            distanceMax = 20,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanDeactivate
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanDeactivate.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanHeatWarn
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanHeatWarn.wav,
+            distanceMax = 10,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanOverdrive
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanOverdrive.ogg,
+            distanceMax = 40,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanCollapse
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanCollapse.ogg,
+            distanceMax = 35,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanError
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanError.ogg,
+            distanceMax = 10,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitch1
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitch1.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitch2
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitch2.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitch3
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitch3.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitch4
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitch4.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitch5
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitch5.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitch6
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitch6.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitch7
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitch7.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitchVanish1
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitchVanish1.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitchVanish2
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitchVanish2.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitchVanish3
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitchVanish3.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitchSevere1
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitchSevere1.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanGlitchSevere2
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanGlitchSevere2.ogg,
+            distanceMax = 15,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanHeartbeat
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanHeartbeat.wav,
+            distanceMax = 10,
+            volume = 0.75,
+        }
+    }
+
+    sound SandevistanTinnitus
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanTinnitus.wav,
+            distanceMax = 10,
+            volume = 0.375,
+        }
+    }
+
+    sound SandevistanDoseImmuno
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/SandevistanDoseImmuno.ogg,
+            distanceMax = 10,
+            volume = 0.75,
+        }
+    }
+}

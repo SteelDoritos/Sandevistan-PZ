@@ -1,0 +1,14 @@
+{
+  "Tooltip_Sandevistan_FwBlank": "Chip virgen: hay que escribirle un programa en una computadora o con el terminal.",
+  "Tooltip_Sandevistan_FwApogeo": "Habilidad: cada kill baja mucho el Heat y da más XP; el Heat sube un poco más rápido.",
+  "Tooltip_Sandevistan_FwCompatibilidad": "Sistema: un cuarto menos de rechazo y de inmunodepresión por dosis, y la mitad más de XP pasiva de adaptación; el Heat sube un poco más.",
+  "Tooltip_Sandevistan_FwCentinela": "Sistema: el Heat de uso depende de cuánto te movés; quieto gasta mucho menos.",
+  "Tooltip_Sandevistan_FwFiltro": "Sistema: las alucinaciones visuales bajan a la cuarta parte, a cambio de quedarte sin sentido de peligro ni aviso de Heat.",
+  "Tooltip_Sandevistan_FwCamaraCriogenica": "Sistema: enfría casi el doble con el implante apagado; más Heat, menos tope y Overdrive más corto.",
+  "Tooltip_Sandevistan_FwMartillo": "Habilidad: golpes cuerpo a cuerpo más fuertes y devuelven estamina; el arma se gasta más.",
+  "Tooltip_Sandevistan_FwOverclock": "Habilidad: sin Overdrive; cuanto más caliente el implante, más velocidad, ataque y frenado; mucha más carga neuronal.",
+  "Tooltip_Sandevistan_FwTaller": "Habilidad: modo trabajo; fabricar, reparar y leer llevan un 25 por ciento menos.",
+  "Tooltip_Sandevistan_FwTerminal": "Terminal portátil: escribe y decompila firmware donde sea, con una batería por uso.",
+  "Tooltip_Sandevistan_FwReactor": "Sistema: la barra de Heat se llena 1,5 veces más lento para sesiones largas e impulso que sube más rápido; enfría mucho más lento.",
+  "Tooltip_Sandevistan_BookGuide": "Con los libros en el inventario se puede sin el nivel."
+}

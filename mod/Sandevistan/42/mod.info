@@ -1,0 +1,10 @@
+id=Sandevistan
+name=Sandevistan
+author=SteelDoritos
+url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816048725
+modversion=0.8
+description=Experimental spinal implant (Sandevistan) for Build 42: time dilation at the cost of heat, neural load, rejection and sanity.
+poster=poster.png
+icon=icon.png
+versionMin=42.20
+loadModAfter=MoodleFramework

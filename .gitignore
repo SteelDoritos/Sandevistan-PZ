@@ -1,0 +1,5 @@
+# generado por la exportación: no se edita a mano
+*.log
+console*.txt
+Sandevistan_report*.txt
+__pycache__/

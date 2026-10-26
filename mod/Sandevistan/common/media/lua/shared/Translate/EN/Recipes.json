@@ -1,0 +1,23 @@
+{
+  "MakeSyntheticCompound": "Make Synthetic Compound",
+  "MakeHomemadeImmunosuppressant": "Make Homemade Immunosuppressant",
+  "MakeHerbalImmunosuppressant": "Make Herbal Immunosuppressant Tincture",
+  "MakeHomemadeKerenzikov": "Make Homemade Black Lace",
+  "BuildPrototype06": "Build Sandevistan Prototype 06",
+  "BuildNeuralBoard": "Build Neural Interface Board",
+  "BuildThermalRegulator": "Build Thermal Regulator",
+  "BuildPowerCell": "Build Power Cell",
+  "BuildMilLattice": "Build military neural lattice",
+  "BuildCryoRegulator": "Build cryogenic regulator",
+  "BuildHighDensityCell": "Build high-density power cell",
+  "BuildPrototype07": "Build Sandevistan Mk. II (military replica)",
+  "BuildPrototype07Homemade": "Build Sandevistan Mk. II (military replica, with homemade Black Lace)",
+  "WriteBlueprint06": "Write Prototype 06 blueprints",
+  "WriteBlueprint07": "Write military replica blueprints",
+  "BuildMilChip": "Build military-grade microchip",
+  "BuildImplantChassis": "Build implant chassis",
+  "BuildNeuralLinkHarness": "Sew neural link harness",
+  "BuildMilChassis": "Build reinforced military chassis",
+  "BuildMilLinkHarness": "Sew shielded neural harness",
+  "BuildFirmwareChip": "Build a blank firmware chip"
+}

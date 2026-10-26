@@ -1,0 +1,671 @@
+module Sandevistan
+{
+    imports { Base }
+
+    item SandevistanMilitary
+    {
+        DisplayName = Sandevistan (Military Grade),
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 1.2,
+        Icon = SandevistanMilitary,
+        WorldStaticModel = SandevistanWorldMilitary,
+    }
+
+    item SandevistanLab
+    {
+        DisplayName = Sandevistan (Prototype 05),
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = SandevistanLab,
+        WorldStaticModel = SandevistanWorldLab,
+    }
+
+    item SandevistanLabP04Broken
+    {
+        DisplayName = Sandevistan Prototype 04 (Defective),
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = SandevistanP04,
+        WorldStaticModel = SandevistanWorldP04,
+    }
+
+    item SandevistanCryoBox
+    {
+        DisplayName = Sealed Cryogenic Case,
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = SandevistanCryoBox,
+        WorldStaticModel = SandevistanWorldCryoBox,
+    }
+
+    item SandevistanCryoBoxEmpty
+    {
+        DisplayName = Surgical Applicator Harness,
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 3.0,
+        Icon = SandevistanHarness,
+        WorldStaticModel = SandevistanWorldCryoBoxEmpty,
+    }
+
+    /* v0.1.30 (17): inmunosupresores como items DRENABLES (formato de Base.Pills en items/drainable.txt de 42.21): cada unidad trae 3 dosis
+       y el juego muestra la barra de usos. */
+    item ImmunosuppressantClinicalPack
+    {
+        DisplayName = Immunosuppressant (Clinical),
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        Medical = true,
+        Icon = ImmunoClinical,
+        WorldStaticModel = SandevistanWorldImmunoClinical,
+    }
+
+    item ImmunosuppressantCraftedPack
+    {
+        DisplayName = Immunosuppressant (Homemade),
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        Medical = true,
+        Icon = ImmunoCrafted,
+        WorldStaticModel = SandevistanWorldImmunoCrafted,
+    }
+
+    item ImmunosuppressantHerbalPack
+    {
+        DisplayName = Herbal Immunosuppressant Tincture,
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        Medical = true,
+        Icon = ImmunoHerbal,
+        WorldStaticModel = SandevistanWorldImmunoHerbal,
+    }
+
+    /* v0.1.30 (24): partes del Prototipo 06 (recetas BuildNeuralBoard / BuildThermalRegulator / BuildPowerCell). La calidad se guarda en modData
+       (partQuality) y se ve en el nombre entre parentesis; sin marca (encontradas en el mundo) valen la calidad por defecto. */
+    item NeuralInterfaceBoard
+    {
+        DisplayName = Neural Interface Board,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = PartBoard,
+        WorldStaticModel = SandevistanWorldPartBoard,
+    }
+
+    item ThermalRegulator
+    {
+        DisplayName = Thermal Regulator,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = PartRegulator,
+        WorldStaticModel = SandevistanWorldPartRegulator,
+    }
+
+    item PowerCell
+    {
+        DisplayName = Power Cell,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = PartCell,
+        WorldStaticModel = SandevistanWorldPartCell,
+    }
+
+    /* v0.1.30 (68): chasis (sin habilidad desde la (122)) y arnes (Costura) del Prototipo 06. */
+    item ImplantChassis
+    {
+        DisplayName = Implant Chassis,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.6,
+        Icon = PartChassis,
+        WorldStaticModel = SandevistanWorldPartChassis,
+    }
+
+    item NeuralLinkHarness
+    {
+        DisplayName = Neural Link Harness,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.2,
+        Icon = PartHarness,
+        WorldStaticModel = SandevistanWorldPartHarness,
+    }
+
+    /* v0.1.30 (43): Prototipo 07 (replica del implante militar). Partes y materiales distintos a los del P06; ver Config.Prototype07. */
+    item MilNeuralLattice
+    {
+        DisplayName = Military Neural Lattice,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = PartMilLattice,
+        WorldStaticModel = SandevistanWorldPartMilLattice,
+    }
+
+    item CryoRegulator
+    {
+        DisplayName = Cryogenic Regulator,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.6,
+        Icon = PartCryoRegulator,
+        WorldStaticModel = SandevistanWorldPartCryoRegulator,
+    }
+
+    item HighDensityCell
+    {
+        DisplayName = High-Density Power Cell,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.6,
+        Icon = PartHDCell,
+        WorldStaticModel = SandevistanWorldPartHDCell,
+    }
+
+    /* v0.1.30 (68): chasis y arnes del Mk. II. */
+    item MilChassis
+    {
+        DisplayName = Reinforced Military Chassis,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.8,
+        Icon = PartMilChassis,
+        WorldStaticModel = SandevistanWorldPartMilChassis,
+    }
+
+    item MilLinkHarness
+    {
+        DisplayName = Shielded Neural Harness,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = PartMilHarness,
+        WorldStaticModel = SandevistanWorldPartMilHarness,
+    }
+
+    item MilSpecChip
+    {
+        DisplayName = Military-Grade Microchip,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MilChip,
+        WorldStaticModel = SandevistanWorldMilChip,
+    }
+
+    /* v0.1.30 (43): planos. Literatura nativa (como los libros de recetas): leerlos ensena las recetas de LearnedRecipes a quien no estudio el implante. Se
+       redactan con las recetas WriteBlueprint06 / WriteBlueprint07 (hay que conocer el diseno, papel y lapicera). */
+    item SandevistanBlueprint06
+    {
+        DisplayName = Sandevistan Blueprints (Prototype 06),
+        DisplayCategory = RecipeResource,
+        ItemType = base:literature,
+        Weight = 0.2,
+        Icon = BlueprintLab,
+        WorldStaticModel = SandevistanWorldBlueprintLab,
+        BoredomChange = -10,
+        StressChange = -5,
+        LearnedRecipes = BuildNeuralBoard;BuildThermalRegulator;BuildPowerCell;BuildImplantChassis;BuildNeuralLinkHarness;BuildPrototype06;WriteBlueprint06,
+    }
+
+    item SandevistanBlueprint07
+    {
+        DisplayName = Sandevistan Blueprints (Military Replica),
+        DisplayCategory = RecipeResource,
+        ItemType = base:literature,
+        Weight = 0.2,
+        Icon = BlueprintMil,
+        WorldStaticModel = SandevistanWorldBlueprintMil,
+        BoredomChange = -10,
+        StressChange = -5,
+        LearnedRecipes = BuildMilLattice;BuildCryoRegulator;BuildHighDensityCell;BuildMilChassis;BuildMilLinkHarness;BuildMilChip;BuildPrototype07;BuildPrototype07Homemade;WriteBlueprint07,
+    }
+
+    item SyntheticCompoundSample
+    {
+        DisplayName = Synthetic Compound Sample,
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = SyntheticCompound,
+        WorldStaticModel = SandevistanWorldCompound,
+    }
+
+    item KerenzikovMilitary
+    {
+        DisplayName = Black Lace Autoinjector,
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        Medical = true,
+        Icon = KerenzikovMilitary,
+        WorldStaticModel = SandevistanWorldKerenzikovMilitary,
+        /* (127) va en el cinturon (slots de cinturon, en los puntos del walkie: client/Sandevistan/Hotbar.lua); StaticModel = el modelo colgado */
+        AttachmentType = BlackLace,
+        StaticModel = SandevistanBeltKerenzikovMilitary,
+    }
+
+    item KerenzikovCrafted
+    {
+        DisplayName = Black Lace (Homemade),
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.1,
+        UseDelta = 0.3333,
+        UseWhileEquipped = false,
+        Medical = true,
+        Icon = KerenzikovCrafted,
+        WorldStaticModel = SandevistanWorldKerenzikovCrafted,
+        AttachmentType = BlackLace,
+        StaticModel = SandevistanBeltKerenzikovCrafted,
+    }
+
+    /* v0.1.30 (22): los dos libros de recetas como literatura nativa (formato de SmithingMag1 en items/literature.txt de 42.21): al leerlos con la
+       accion de lectura del juego se aprenden las recetas de `LearnedRecipes` (nombres pelados). */
+    item ImmunoSynthesisBook
+    {
+        DisplayName = Lab Notebook (Synthesis),
+        DisplayCategory = RecipeResource,
+        ItemType = base:literature,
+        Weight = 0.3,
+        Icon = LabNotebook,
+        BoredomChange = -10,
+        StressChange = -5,
+        LearnedRecipes = MakeSyntheticCompound;MakeHomemadeImmunosuppressant;MakeHerbalImmunosuppressant,
+        WorldStaticModel = SandevistanWorldNotebookLab,
+    }
+
+    item KerenzikovFormulationBook
+    {
+        DisplayName = Black Lace Formulation Report,
+        DisplayCategory = RecipeResource,
+        ItemType = base:literature,
+        Weight = 0.2,
+        Icon = MilitaryReport,
+        BoredomChange = -10,
+        StressChange = -5,
+        LearnedRecipes = MakeHomemadeKerenzikov,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+
+    /* v0.1.30 (30): guia de campo (se entrega con el primer implante): se lee con el "Leer" del mod, en una ventana de 6 paginas. */
+    item SandevistanFieldGuide
+    {
+        DisplayName = Sandevistan: Field Guide,
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.2,
+        Icon = MilitaryReport,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+
+    item SandevistanNote01
+    {
+        DisplayName = Researcher Papers (1/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteLog,
+        WorldStaticModel = SandevistanWorldNoteLog,
+    }
+    item SandevistanNote02
+    {
+        DisplayName = Researcher Papers (2/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MilitaryReport,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+    item SandevistanNote03
+    {
+        DisplayName = Researcher Papers (3/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MilitaryReport,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+    item SandevistanNote04
+    {
+        DisplayName = Researcher Papers (4/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteLog,
+        WorldStaticModel = SandevistanWorldNoteLog,
+    }
+    item SandevistanNote05
+    {
+        DisplayName = Researcher Papers (5/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MilitaryReport,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+    item SandevistanNote06
+    {
+        DisplayName = Researcher Papers (6/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MilitaryReport,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+    item SandevistanNote07
+    {
+        DisplayName = Researcher Papers (7/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteLog,
+        WorldStaticModel = SandevistanWorldNoteLog,
+    }
+    item SandevistanNote08
+    {
+        DisplayName = Researcher Papers (8/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MilitaryReport,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+    item SandevistanNote09
+    {
+        DisplayName = Researcher Papers (9/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteLog,
+        WorldStaticModel = SandevistanWorldNoteLog,
+    }
+    item SandevistanNote10
+    {
+        DisplayName = Researcher Papers (10/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteLog,
+        WorldStaticModel = SandevistanWorldNoteLog,
+    }
+    item SandevistanNote11
+    {
+        DisplayName = Researcher Papers (11/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MilitaryReport,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+    item SandevistanNote12
+    {
+        DisplayName = Researcher Papers (12/12),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MilitaryReport,
+        WorldStaticModel = SandevistanWorldReportMilitary,
+    }
+    item SandevistanNote13
+    {
+        DisplayName = Depot Guard Note (1/3),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteGuard,
+        WorldStaticModel = SandevistanWorldNoteGuard,
+    }
+    item SandevistanNote14
+    {
+        DisplayName = Depot Guard Note (2/3),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteGuard,
+        WorldStaticModel = SandevistanWorldNoteGuard,
+    }
+    item SandevistanNote15
+    {
+        DisplayName = Depot Guard Note (3/3),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteGuard,
+        WorldStaticModel = SandevistanWorldNoteGuard,
+    }
+    item SandevistanNote16
+    {
+        DisplayName = Student Lab Notes (1/5),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteStudent,
+        WorldStaticModel = SandevistanWorldNoteStudent,
+    }
+    item SandevistanNote17
+    {
+        DisplayName = Student Lab Notes (2/5),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteStudent,
+        WorldStaticModel = SandevistanWorldNoteStudent,
+    }
+    item SandevistanNote18
+    {
+        DisplayName = Student Lab Notes (3/5),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteStudent,
+        WorldStaticModel = SandevistanWorldNoteStudent,
+    }
+    item SandevistanNote19
+    {
+        DisplayName = Student Lab Notes (4/5),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteStudent,
+        WorldStaticModel = SandevistanWorldNoteStudent,
+    }
+    item SandevistanNote20
+    {
+        DisplayName = Student Lab Notes (5/5),
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = NoteStudent,
+        WorldStaticModel = SandevistanWorldNoteStudent,
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    item SandevistanDossierResearcher
+    {
+        DisplayName = Researcher Dossier,
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = DossierResearcher,
+        WorldStaticModel = SandevistanWorldDossierResearcher,
+    }
+
+    item SandevistanDossierDepot
+    {
+        DisplayName = Depot Guard Dossier,
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = DossierDepot,
+        WorldStaticModel = SandevistanWorldDossierDepot,
+    }
+
+    item SandevistanDossierStudent
+    {
+        DisplayName = Student Lab Binder,
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = DossierStudent,
+        WorldStaticModel = SandevistanWorldDossierStudent,
+    }
+
+    /* v0.1.30 (82): chips de firmware (EPROM de los 90). Un tipo de item por programa, sin modData: el programa ES el tipo. El chip base (FwBlank) es el virgen;
+       el resto trae su programa (14-catalogo-firmware.md, 15-plan-firmware.md). Iconos, modelos y texturas: tools/chip_art.py y tools/gen_item_models.py. */
+    item FwBlank
+    {
+        DisplayName = Firmware Chip (blank),
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwBlank,
+        Tooltip = Tooltip_Sandevistan_FwBlank,
+        WorldStaticModel = SandevistanWorldFwBlank,
+    }
+
+    /* v0.1.30 (85): terminal portatil de grabacion. Escribe programas en un chip virgen sin una computadora (gasta una bateria por programa); el plan B de la PC
+       (15-plan-firmware.md, decision 4). Icono, modelo y textura: tools/gen_item_models.py. */
+    item FwTerminal
+    {
+        DisplayName = Firmware Terminal,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 1.2,
+        Icon = FwTerminal,
+        Tooltip = Tooltip_Sandevistan_FwTerminal,
+        WorldStaticModel = SandevistanWorldTerminal,
+    }
+
+    item FwApogeo
+    {
+        DisplayName = Firmware: Apogee,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwApogeo,
+        Tooltip = Tooltip_Sandevistan_FwApogeo,
+        WorldStaticModel = SandevistanWorldFwApogeo,
+    }
+
+    item FwCompatibilidad
+    {
+        DisplayName = Firmware: Compatibility,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwCompatibilidad,
+        Tooltip = Tooltip_Sandevistan_FwCompatibilidad,
+        WorldStaticModel = SandevistanWorldFwCompatibilidad,
+    }
+
+    item FwCentinela
+    {
+        DisplayName = Firmware: Sentinel,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwCentinela,
+        Tooltip = Tooltip_Sandevistan_FwCentinela,
+        WorldStaticModel = SandevistanWorldFwCentinela,
+    }
+
+    item FwFiltro
+    {
+        DisplayName = Firmware: Filter,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwFiltro,
+        Tooltip = Tooltip_Sandevistan_FwFiltro,
+        WorldStaticModel = SandevistanWorldFwFiltro,
+    }
+
+    item FwCamaraCriogenica
+    {
+        DisplayName = Firmware: Cryo Chamber,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwCamaraCriogenica,
+        Tooltip = Tooltip_Sandevistan_FwCamaraCriogenica,
+        WorldStaticModel = SandevistanWorldFwCamaraCriogenica,
+    }
+
+    item FwMartillo
+    {
+        DisplayName = Firmware: Hammer,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwMartillo,
+        Tooltip = Tooltip_Sandevistan_FwMartillo,
+        WorldStaticModel = SandevistanWorldFwMartillo,
+    }
+
+    item FwOverclock
+    {
+        DisplayName = Firmware: Overclock,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwOverclock,
+        Tooltip = Tooltip_Sandevistan_FwOverclock,
+        WorldStaticModel = SandevistanWorldFwOverclock,
+    }
+
+    item FwReactor
+    {
+        DisplayName = Firmware: Reactor,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwReactor,
+        Tooltip = Tooltip_Sandevistan_FwReactor,
+        WorldStaticModel = SandevistanWorldFwReactor,
+    }
+
+    item FwTaller
+    {
+        DisplayName = Firmware: Workshop,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 0.02,
+        Icon = FwTaller,
+        Tooltip = Tooltip_Sandevistan_FwTaller,
+        WorldStaticModel = SandevistanWorldFwTaller,
+    }
+
+}

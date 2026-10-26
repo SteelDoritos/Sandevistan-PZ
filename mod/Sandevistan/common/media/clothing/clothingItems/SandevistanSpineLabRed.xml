@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>media\models_X\Skinned\Clothes\SandevistanSpineLab_Male.fbx</m_MaleModel>
+	<m_FemaleModel>media\models_X\Skinned\Clothes\SandevistanSpineLab_Female.fbx</m_FemaleModel>
+	<m_GUID>19ed36d6-33f6-4523-9234-e9160c965633</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Clothes\SandevistanSpine\SandevistanSpine_Lab_Overdrive</textureChoices>
+</clothingItem>

@@ -1,0 +1,12 @@
+id=SandevistanFX
+name=Sandevistan - Slow sound and frozen rain (optional)
+author=SteelDoritos
+modversion=0.8
+description=Optional add-on for Sandevistan: while time dilation is on, slowed zombies sound slowed (lower pitch, per zombie), the rain and wind sound slows down, and rain, snow, splashes and puddle ripples freeze. During a cyberpsychosis episode, nearby sounds go slightly out of tune. Needs ZombieBuddy (Java). Sandevistan works the same without it. The hallucinations moved to Sandevistan - Cyberpsychosis hallucinations. For frozen rain in Viewpoint's 3D camera, also enable Sandevistan - Afterimages with real pose.
+icon=icon.png
+versionMin=42.21
+require=\Sandevistan,\ZombieBuddy
+loadModAfter=Sandevistan
+javaJarFile=media/java/client/SandevistanFX.jar
+javaPkgName=sandevistan.fx
+ZBVersionMin=2.3.0

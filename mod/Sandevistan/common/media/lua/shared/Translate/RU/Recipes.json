@@ -1,0 +1,23 @@
+{
+  "MakeSyntheticCompound": "Сделать синтетическое соединение",
+  "MakeHomemadeImmunosuppressant": "Сделать самодельный иммуносупрессор",
+  "MakeHerbalImmunosuppressant": "Сделать травяную настойку-иммуносупрессор",
+  "MakeHomemadeKerenzikov": "Сделать самодельное «Чёрное кружево»",
+  "BuildPrototype06": "Собрать Сандевистан «Прототип 06»",
+  "BuildNeuralBoard": "Собрать плату нейроинтерфейса",
+  "BuildThermalRegulator": "Собрать терморегулятор",
+  "BuildPowerCell": "Собрать силовой элемент",
+  "BuildMilLattice": "Собрать военную нейронную решётку",
+  "BuildCryoRegulator": "Собрать криогенный регулятор",
+  "BuildHighDensityCell": "Собрать силовой элемент высокой ёмкости",
+  "BuildPrototype07": "Собрать Сандевистан Mk. II (копия военного образца)",
+  "BuildPrototype07Homemade": "Собрать Сандевистан Mk. II (копия военного образца, с самодельным «Чёрным кружевом»)",
+  "WriteBlueprint06": "Написать чертежи «Прототипа 06»",
+  "WriteBlueprint07": "Написать чертежи копии военного образца",
+  "BuildMilChip": "Собрать военный микрочип",
+  "BuildImplantChassis": "Собрать корпус импланта",
+  "BuildNeuralLinkHarness": "Сшить упряжь нейросвязи",
+  "BuildMilChassis": "Собрать усиленный военный корпус",
+  "BuildMilLinkHarness": "Сшить экранированную нейроупряжь",
+  "BuildFirmwareChip": "Собрать чистый чип прошивки"
+}

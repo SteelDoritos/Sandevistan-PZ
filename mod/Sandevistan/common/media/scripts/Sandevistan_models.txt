@@ -1,0 +1,346 @@
+module Sandevistan
+{
+    imports { Base }
+
+    /* Modelos 3D de los ítems en el suelo (generados con tools/gen_item_models.py). */
+    model SandevistanWorldLab
+    {
+        mesh = WorldItems/Sandevistan_Lab,
+        texture = WorldItems/Sandevistan_Lab,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldMilitary
+    {
+        mesh = WorldItems/Sandevistan_Military,
+        texture = WorldItems/Sandevistan_Military,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldP04
+    {
+        mesh = WorldItems/Sandevistan_P04,
+        texture = WorldItems/Sandevistan_P04,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldCryoBox
+    {
+        mesh = WorldItems/Sandevistan_CryoBox,
+        texture = WorldItems/Sandevistan_CryoBox,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldCryoBoxEmpty
+    {
+        mesh = WorldItems/Sandevistan_CryoBoxEmpty,
+        texture = WorldItems/Sandevistan_CryoBoxEmpty,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldImmunoClinical
+    {
+        mesh = WorldItems/Sandevistan_ImmunoClinical,
+        texture = WorldItems/Sandevistan_ImmunoClinical,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldImmunoCrafted
+    {
+        mesh = WorldItems/Sandevistan_ImmunoCrafted,
+        texture = WorldItems/Sandevistan_ImmunoCrafted,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldImmunoHerbal
+    {
+        mesh = WorldItems/Sandevistan_ImmunoHerbal,
+        texture = WorldItems/Sandevistan_ImmunoHerbal,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartBoard
+    {
+        mesh = WorldItems/Sandevistan_PartBoard,
+        texture = WorldItems/Sandevistan_PartBoard,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartRegulator
+    {
+        mesh = WorldItems/Sandevistan_PartRegulator,
+        texture = WorldItems/Sandevistan_PartRegulator,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartCell
+    {
+        mesh = WorldItems/Sandevistan_PartCell,
+        texture = WorldItems/Sandevistan_PartCell,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartMilLattice
+    {
+        mesh = WorldItems/Sandevistan_PartMilLattice,
+        texture = WorldItems/Sandevistan_PartMilLattice,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartCryoRegulator
+    {
+        mesh = WorldItems/Sandevistan_PartCryoRegulator,
+        texture = WorldItems/Sandevistan_PartCryoRegulator,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartHDCell
+    {
+        mesh = WorldItems/Sandevistan_PartHDCell,
+        texture = WorldItems/Sandevistan_PartHDCell,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartChassis
+    {
+        mesh = WorldItems/Sandevistan_PartChassis,
+        texture = WorldItems/Sandevistan_PartChassis,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartHarness
+    {
+        mesh = WorldItems/Sandevistan_PartHarness,
+        texture = WorldItems/Sandevistan_PartHarness,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartMilChassis
+    {
+        mesh = WorldItems/Sandevistan_PartMilChassis,
+        texture = WorldItems/Sandevistan_PartMilChassis,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldPartMilHarness
+    {
+        mesh = WorldItems/Sandevistan_PartMilHarness,
+        texture = WorldItems/Sandevistan_PartMilHarness,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldMilChip
+    {
+        mesh = WorldItems/Sandevistan_MilChip,
+        texture = WorldItems/Sandevistan_MilChip,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldTerminal
+    {
+        mesh = WorldItems/Sandevistan_Terminal,
+        texture = WorldItems/Sandevistan_Terminal,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldBlueprintLab
+    {
+        mesh = WorldItems/Sandevistan_BlueprintLab,
+        texture = WorldItems/Sandevistan_BlueprintLab,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldBlueprintMil
+    {
+        mesh = WorldItems/Sandevistan_BlueprintMil,
+        texture = WorldItems/Sandevistan_BlueprintMil,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldCompound
+    {
+        mesh = WorldItems/Sandevistan_Compound,
+        texture = WorldItems/Sandevistan_Compound,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldKerenzikovMilitary
+    {
+        mesh = WorldItems/Sandevistan_KerenzikovMilitary,
+        texture = WorldItems/Sandevistan_KerenzikovMilitary,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldKerenzikovCrafted
+    {
+        mesh = WorldItems/Sandevistan_KerenzikovCrafted,
+        texture = WorldItems/Sandevistan_KerenzikovCrafted,
+        scale = 1.0,
+    }
+
+    /* (127) Black Lace colgado del cinturon (StaticModel; puntos de enganche del walkie). La malla es la del suelo (largo en X); en el punto del walkie
+       X sale de la cadera e Y va a lo largo de la pierna, asi que `attachment walkie_belt_*` lo gira para que cuelgue parado. El izquierdo se ajusto en el
+       juego (Debug -> Interfaz y visual -> "Black Lace en el cinturon", client/Sandevistan/Hotbar.lua). El derecho lleva LOS MISMOS valores: en el cuerpo,
+       walkie_belt_right es walkie_belt_left girado 179 grados sobre el eje de la columna (Bip01_Pelvis X; medido con los offset/rotate de
+       models_characters.txt), asi que el mismo ajuste del objeto lo deja simetrico. */
+    model SandevistanBeltKerenzikovMilitary
+    {
+        mesh = WorldItems/Sandevistan_KerenzikovMilitary,
+        texture = WorldItems/Sandevistan_KerenzikovMilitary,
+        scale = 1.0,
+        attachment walkie_belt_left
+        {
+            offset = 0.02 0.12 0.02,
+            rotate = 15.0 15.0 105.0,
+        }
+        attachment walkie_belt_right
+        {
+            offset = 0.02 0.12 0.02,
+            rotate = 15.0 15.0 105.0,
+        }
+    }
+
+    model SandevistanBeltKerenzikovCrafted
+    {
+        mesh = WorldItems/Sandevistan_KerenzikovCrafted,
+        texture = WorldItems/Sandevistan_KerenzikovCrafted,
+        scale = 1.0,
+        attachment walkie_belt_left
+        {
+            offset = 0.02 0.12 0.02,
+            rotate = 15.0 15.0 105.0,
+        }
+        attachment walkie_belt_right
+        {
+            offset = 0.02 0.12 0.02,
+            rotate = 15.0 15.0 105.0,
+        }
+    }
+
+    model SandevistanWorldNotebookLab
+    {
+        mesh = WorldItems/Sandevistan_NotebookLab,
+        texture = WorldItems/Sandevistan_NotebookLab,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldReportMilitary
+    {
+        mesh = WorldItems/Sandevistan_ReportMilitary,
+        texture = WorldItems/Sandevistan_ReportMilitary,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldNoteLog
+    {
+        mesh = WorldItems/Sandevistan_NoteLog,
+        texture = WorldItems/Sandevistan_NoteLog,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldNoteGuard
+    {
+        mesh = WorldItems/Sandevistan_NoteGuard,
+        texture = WorldItems/Sandevistan_NoteGuard,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldNoteStudent
+    {
+        mesh = WorldItems/Sandevistan_NoteStudent,
+        texture = WorldItems/Sandevistan_NoteStudent,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldDossierResearcher
+    {
+        mesh = WorldItems/Sandevistan_DossierResearcher,
+        texture = WorldItems/Sandevistan_DossierResearcher,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldDossierDepot
+    {
+        mesh = WorldItems/Sandevistan_DossierDepot,
+        texture = WorldItems/Sandevistan_DossierDepot,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldDossierStudent
+    {
+        mesh = WorldItems/Sandevistan_DossierStudent,
+        texture = WorldItems/Sandevistan_DossierStudent,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwBlank
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwBlank,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwApogeo
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwApogeo,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwCompatibilidad
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwCompatibilidad,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwCentinela
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwCentinela,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwFiltro
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwFiltro,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwCamaraCriogenica
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwCamaraCriogenica,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwMartillo
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwMartillo,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwOverclock
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwOverclock,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwReactor
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwReactor,
+        scale = 1.0,
+    }
+
+    model SandevistanWorldFwTaller
+    {
+        mesh = WorldItems/Sandevistan_FwChip,
+        texture = WorldItems/Sandevistan_FwTaller,
+        scale = 1.0,
+    }
+
+}

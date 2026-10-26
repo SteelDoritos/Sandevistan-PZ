@@ -1,0 +1,85 @@
+module Sandevistan
+{
+    imports { Base }
+
+    /* Implante 3D de la espalda: prenda skineada a la columna que equipa el mod por Lua al tener el implante. Un modelo por variante (laboratorio y militar,
+       modelados a mano: tools/build_sandi_models.py) y tres texturas por modelo (apagado, encendido y Overdrive).
+       La ubicacion de cuerpo se registra en media/registries.lua y se agrega al grupo Human en lua/shared/Sandevistan/BodyLocations.lua. */
+    item SandevistanSpineLab
+    {
+        DisplayName = Sandevistan Spine (Lab),
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0,
+        WorldRender = false,
+        BodyLocation = sandevistan:spine,
+        ClothingItem = SandevistanSpineLab,
+        Icon = SandevistanLab,
+    }
+
+
+    item SandevistanSpineLabOn
+    {
+        DisplayName = Sandevistan Spine (Lab - active),
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0,
+        WorldRender = false,
+        BodyLocation = sandevistan:spine,
+        ClothingItem = SandevistanSpineLabOn,
+        Icon = SandevistanLab,
+    }
+
+
+    item SandevistanSpineLabRed
+    {
+        DisplayName = Sandevistan Spine (Lab - Overdrive),
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0,
+        WorldRender = false,
+        BodyLocation = sandevistan:spine,
+        ClothingItem = SandevistanSpineLabRed,
+        Icon = SandevistanLab,
+    }
+
+
+    item SandevistanSpineMilitary
+    {
+        DisplayName = Sandevistan Spine (Military),
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0,
+        WorldRender = false,
+        BodyLocation = sandevistan:spine,
+        ClothingItem = SandevistanSpineMilitary,
+        Icon = SandevistanMilitary,
+    }
+
+
+    item SandevistanSpineMilitaryOn
+    {
+        DisplayName = Sandevistan Spine (Military - active),
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0,
+        WorldRender = false,
+        BodyLocation = sandevistan:spine,
+        ClothingItem = SandevistanSpineMilitaryOn,
+        Icon = SandevistanMilitary,
+    }
+
+
+    item SandevistanSpineMilitaryRed
+    {
+        DisplayName = Sandevistan Spine (Military - Overdrive),
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0,
+        WorldRender = false,
+        BodyLocation = sandevistan:spine,
+        ClothingItem = SandevistanSpineMilitaryRed,
+        Icon = SandevistanMilitary,
+    }
+
+}

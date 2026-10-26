@@ -1,0 +1,14 @@
+{
+  "Tooltip_Sandevistan_FwBlank": "Blank chip: a program must be written on it at a computer or with the terminal.",
+  "Tooltip_Sandevistan_FwApogeo": "Skill: every kill lowers Heat a lot and gives more XP; Heat rises a little faster.",
+  "Tooltip_Sandevistan_FwCompatibilidad": "System: a quarter less rejection and immunodepression per dose, and half again as much passive adaptation XP; Heat rises a little more.",
+  "Tooltip_Sandevistan_FwCentinela": "System: Heat of use depends on how much you move; standing still costs far less.",
+  "Tooltip_Sandevistan_FwFiltro": "System: visual hallucinations drop to a quarter, at the cost of losing the danger sense and the Heat warning.",
+  "Tooltip_Sandevistan_FwCamaraCriogenica": "System: cools almost twice as fast with the implant off; more Heat, lower cap and shorter Overdrive.",
+  "Tooltip_Sandevistan_FwMartillo": "Skill: harder melee hits that refund stamina; the weapon wears faster.",
+  "Tooltip_Sandevistan_FwOverclock": "Skill: no Overdrive; the hotter the implant runs, the more speed, attack and slowdown; much more neural load.",
+  "Tooltip_Sandevistan_FwTaller": "Skill: work mode; crafting, repairing and reading take 25 percent less.",
+  "Tooltip_Sandevistan_FwTerminal": "Portable terminal: writes and decompiles firmware anywhere, one battery per use.",
+  "Tooltip_Sandevistan_FwReactor": "System: the Heat bar fills 1.5 times slower for long sessions and momentum builds faster; cools much slower.",
+  "Tooltip_Sandevistan_BookGuide": "With the books in your inventory, no level needed."
+}
