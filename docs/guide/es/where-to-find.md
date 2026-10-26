@@ -134,7 +134,7 @@ Cada campus tiene:
 | Muestra de compuesto sintético | laboratorios, depósitos médicos | poco común |
 | Partes del Prototipo 06 (las cinco) | cajas y tiendas de electrónica, laboratorios, escritorios de oficina | raro (multiplicador del sandbox) |
 | Microchip de grado militar | depósitos de electrónica del ejército, herramientas de hangar, depósitos de búnker, cajas de electrónica | muy raro |
-| Cuaderno de laboratorio (síntesis) | laboratorios, aulas, bibliotecas, casilleros escolares | raro |
+| Cuaderno de laboratorio (síntesis) | laboratorios, aulas, bibliotecas, casilleros escolares, estantes de medicamentos de farmacias, clínicas | raro |
 | Libros de Primeros Auxilios y de Electricidad (vol. 1 y 2) | laboratorios, escuelas, clínicas, escritorios de oficina | poco común |
 | Informe de formulación del Black Lace | laboratorios, escritorios de oficina, depósitos médicos | raro |
 | Notas de laboratorio del estudiante | escritorios de oficina y de aula, casilleros, bibliotecas | raro |

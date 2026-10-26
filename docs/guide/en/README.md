@@ -49,7 +49,7 @@ There is no store. You have five ways in (details and locations in [Where to fin
 
 1. **Install it.** You need First Aid, a suture needle (or needle and thread) and disinfectant, plus the applicator harness, or a mirror, a scalpel and
    painkillers if you operate on yourself without one. See [Surgery](surgery-and-crafting.md#installing-an-implant).
-2. **Take an immunosuppressant right away.** Without one, your body destroys the implant in a few days (about four on Normal).
+2. **Take an immunosuppressant right away.** Without one, your body destroys the implant in a few days (three to four on Normal).
 3. **Press Z** to switch it on and press it again to switch it off. Short bursts are the key: stop before the Heat bar fills.
 4. **Check the Implant tab** in the character window (and the floating panel). It shows Heat, neural load, rejection, coverage and
    what each one is doing to you.

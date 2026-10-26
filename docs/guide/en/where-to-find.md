@@ -128,7 +128,7 @@ Each campus has:
 | Synthetic Compound Sample | labs, medical storage | uncommon |
 | Prototype 06 parts (all five) | electronics crates and stores, labs, office desks | rare (sandbox multiplier) |
 | Military-Grade Microchip | army electronics storage, hangar tools, bunker storage, electronics crates | very rare |
-| Lab Notebook (Synthesis) | labs, classrooms, libraries, school lockers | rare |
+| Lab Notebook (Synthesis) | labs, classrooms, libraries, school lockers, pharmacy medicine shelves, clinics | rare |
 | First Aid and Electrical books (vol. 1 and 2) | labs, schools, clinics, office desks | uncommon |
 | Black Lace Formulation Report | labs, office desks, medical storage | rare |
 | Student Lab Notes | office and classroom desks, lockers, libraries | rare |

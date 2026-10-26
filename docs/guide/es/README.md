@@ -50,7 +50,7 @@ No hay tienda. Tienes cinco caminos (los detalles y los lugares están en [Dónd
 
 1. **Instálalo.** Necesitas Primeros Auxilios, una aguja de sutura (o aguja e hilo) y desinfectante, más el arnés aplicador o, si te operas solo sin
    él, un espejo, un bisturí y analgésicos. Mira [Cirugía](surgery-and-crafting.md#instalar-un-implante).
-2. **Toma un inmunosupresor enseguida.** Sin él, tu cuerpo destruye el implante en pocos días (unos cuatro en Normal).
+2. **Toma un inmunosupresor enseguida.** Sin él, tu cuerpo destruye el implante en pocos días (tres o cuatro en Normal).
 3. **Presiona Z** para encenderlo y otra vez para apagarlo. La clave son los usos cortos: apágalo antes de que se llene la barra de
    Heat.
 4. **Revisa la pestaña Implante** de la ventana del personaje (y el panel flotante). Muestra el Heat, la carga neuronal, el rechazo,

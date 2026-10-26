@@ -38,6 +38,7 @@ The sandbox option **Difficulty** picks a ready-made set. Anything other than *C
 | Cryogenic cases at the base | 2 | 2 | 2 | 1 | 1 |
 | Mk. II buildable | yes | yes | yes | yes | no |
 | All firmware known | yes | no | no | no | no |
+| Guided by books | Gentle | Gentle | Normal | Harsh | Harsh |
 | Cyberpsychosis symptoms | danger sense only | all but blackouts and misfire | all | all | all |
 
 ## Sandbox options
@@ -96,7 +97,8 @@ In *Options → Mods → Sandevistan* (each player sets their own):
 | **Sandevistan - Cyberpsychosis hallucinations (optional)** | The Java side of cyberpsychosis: fake zombies only you see, your double, the disguise, figures at the edge of your view, corrupted text, glitching vanilla moodles, camera shake and the screen effects of the episodes. Needs **ZombieBuddy**. Without it, cyberpsychosis keeps its other symptoms. |
 | **Beyond Ten** | Mastery levels 11–15 for military implants. |
 | **Project A-Life** | NPCs dressed with the Sandevistan spine drop an implant you can extract. |
-| **Project Viewport** | The 2D afterimages and marks hide themselves in its 3D view. |
+| **Sandevistan - Afterimages with real pose (optional)** | Afterimages drawn with your real pose instead of 2D silhouettes, in the isometric camera and in Viewpoint's 3D camera; with Viewpoint it also freezes the 3D rain and snow. Needs **ZombieBuddy**. |
+| **Viewpoint** | The 2D afterimages and marks hide themselves in its 3D view. |
 
 ## Reporting a problem
 

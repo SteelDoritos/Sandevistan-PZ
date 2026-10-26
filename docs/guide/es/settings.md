@@ -38,6 +38,7 @@ La opción de sandbox **Dificultad** elige un conjunto armado. Cualquier opción
 | Estuches criogénicos en la base | 2 | 2 | 2 | 1 | 1 |
 | Mk. II fabricable | sí | sí | sí | sí | no |
 | Todo el firmware conocido | sí | no | no | no | no |
+| Guía con libros | Suave | Suave | Normal | Dura | Dura |
 | Síntomas de cyberpsicosis | solo el sentido de peligro | todos menos apagones y reflejo descontrolado | todos | todos | todos |
 
 ## Opciones de sandbox
@@ -98,7 +99,8 @@ En *Opciones → Mods → Sandevistan* (cada jugador elige las suyas):
 | **Sandevistan - Cyberpsychosis hallucinations (optional)** | La parte Java de la cyberpsicosis: zombis falsos que solo ves tú, tu doble, el disfraz, figuras al costado de la vista, texto corrupto, moodles vanilla con glitch, la sacudida de la cámara y los efectos de pantalla de los episodios. Necesita **ZombieBuddy**. Sin él, la cyberpsicosis mantiene el resto de sus síntomas. |
 | **Beyond Ten** | Niveles de maestría del 11 al 15 para los implantes militares. |
 | **Project A-Life** | Los NPCs vestidos con la espalda del Sandevistan dejan un implante que se puede extraer. |
-| **Project Viewport** | Las estelas y marcas 2D se ocultan solas en su vista 3D. |
+| **Sandevistan - Afterimages with real pose (optional)** | Estelas con tu pose real en lugar de siluetas 2D, en la cámara isométrica y en la cámara 3D de Viewpoint; con Viewpoint también congela la lluvia y la nieve en 3D. Necesita **ZombieBuddy**. |
+| **Viewpoint** | Las estelas y marcas 2D se ocultan solas en su vista 3D. |
 
 ## Reportar un problema
 

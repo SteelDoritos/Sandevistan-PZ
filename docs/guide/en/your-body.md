@@ -13,7 +13,7 @@ Your body treats the implant as an invader. Rejection goes from 0 to 100.
 
 - Simply having the implant: **1.4 per game hour** at adaptation level 0, falling in a straight line to **zero at stable
   adaptation** (level 5 lab, level 7 military). It rises at half speed while you sleep. Untreated at level 0, it reaches 100 in
-  about **three days**.
+  **three to four days** (less the less you sleep).
 - Chronic neural load: +0.3 per hour while neural load is 60 or more, at any adaptation level.
 - Events: a thermal cutout (+2 to 4, nothing at stable adaptation), an Overdrive collapse (+10 to 18, half at stable adaptation), a
   firmware change (+3), a reflex misfire (+3).
@@ -142,8 +142,8 @@ If the load falls under 60 its symptoms quiet down, but the condition stays, and
   from the horde bring it down.
 - **Humanity anchors:** sleeping in a bed, reading a book or a magazine, eating something you like and, in multiplayer, staying near
   another player for a while **lower the pressure** (not the neural load) and push the next crisis away. Each one has its own cooldown.
-  High Heat also adds pressure from 70 % of the cap; after an Overdrive collapse or a total fury, the next warning comes about 24
-  minutes sooner.
+  High Heat also adds pressure from 70 % of the cap; after an Overdrive collapse or a total fury, for the next 24 game minutes the
+  next warning is scheduled at half the usual wait.
 - **Light withdrawal:** with neural load at 60 or more and **12 game hours without using the implant**, stress and unhappiness slowly
   climb and the monitor insists. It fades on its own at 48 hours (or if the load drops below 60). Using it for 10 seconds resets it;
   in Work mode it counts half. It never touches neural load.

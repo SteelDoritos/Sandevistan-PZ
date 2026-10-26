@@ -12,8 +12,8 @@ Tu cuerpo trata al implante como un invasor. El rechazo va de 0 a 100.
 **Qué lo sube:**
 
 - Tener el implante, sin más: **1,4 por hora de juego** con adaptación nivel 0, y baja en línea recta hasta **cero con la adaptación
-  estable** (nivel 5 en laboratorio, 7 en militar). Durmiendo sube a la mitad. Sin tratamiento, a nivel 0 llega a 100 en unos **tres
-  días**.
+  estable** (nivel 5 en laboratorio, 7 en militar). Durmiendo sube a la mitad. Sin tratamiento, a nivel 0 llega a 100 en **tres o cuatro
+  días** (menos cuanto menos duermas).
 - La carga neuronal crónica: +0,3 por hora mientras la carga neuronal esté en 60 o más, con cualquier nivel de adaptación.
 - Eventos: un corte térmico (+2 a 4, nada con la adaptación estable), un colapso de Overdrive (+10 a 18, la mitad con la adaptación
   estable), un cambio de firmware (+3), un reflejo descontrolado (+3).
@@ -143,8 +143,8 @@ carga baja de 60 los síntomas se calman, pero la condición sigue, y vuelven cu
   de la horda la bajan.
 - **Anclas de humanidad:** dormir en una cama, leer un libro o una revista, comer algo que te guste y, en multijugador, estar cerca de
   otro jugador un rato **bajan la presión** (no la carga neuronal) y alejan la próxima crisis. Cada una tiene su propia espera. El Heat
-  alto también suma presión desde el 70 % del tope; después de un colapso de Overdrive o de una furia total, la próxima antesala llega
-  antes por unos 24 minutos.
+  alto también suma presión desde el 70 % del tope; después de un colapso de Overdrive o de una furia total, durante los 24 minutos de juego
+  siguientes la próxima antesala se agenda con la mitad de la espera.
 - **Abstinencia leve:** con la carga neuronal en 60 o más y **12 horas de juego sin usar el implante**, el estrés y la infelicidad suben
   de a poco y el monitor insiste. Se va sola a las 48 horas (o si la carga baja de 60). Usarlo 10 segundos la reinicia; con el modo
   Taller cuentan la mitad. No toca la carga neuronal.
