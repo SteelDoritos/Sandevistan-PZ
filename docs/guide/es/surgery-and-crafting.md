@@ -34,6 +34,9 @@ cerca estés del nivel.
 
 ## Instalar un implante
 
+![Instalarlo en ti mismo: guiado con el arnés o a ciegas frente a un espejo, cada uno con su probabilidad de éxito.](../../img/surgery-menu.jpg)
+*Instalarlo en ti mismo: guiado con el arnés o a ciegas frente a un espejo, cada uno con su probabilidad de éxito.*
+
 Clic derecho sobre el implante en tu inventario. Puedes instalártelo a ti o a otro jugador que esté a tu lado, que tiene que aceptar.
 En todos los casos necesitas una **aguja de sutura** (o, como al coser una herida, una **aguja de coser e hilo** para 3 puntadas) y
 **desinfectante** (o toallitas con alcohol). En las tablas, PA = Primeros Auxilios.

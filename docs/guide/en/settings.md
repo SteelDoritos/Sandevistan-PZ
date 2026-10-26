@@ -86,6 +86,9 @@ In *Options → Mods → Sandevistan* (each player sets their own):
 
 ## Add-ons and compatibility
 
+![With the Afterimages with real pose add-on and Viewpoint, the afterimages are drawn in the 3D camera.](../../img/viewpoint-3d.jpg)
+*With the Afterimages with real pose add-on and Viewpoint, the afterimages are drawn in the 3D camera.*
+
 | Mod | What it adds |
 |---|---|
 | **Moodle Framework** | The mod's moodles. Recommended. |

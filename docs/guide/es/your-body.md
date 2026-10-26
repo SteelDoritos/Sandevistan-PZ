@@ -125,6 +125,9 @@ espalda; con cyberpsicosis pasa más seguido. Solo lo oyes tú y no atrae zombis
 
 ## Cyberpsicosis
 
+![Cyberpsicosis: la pantalla se tiñe de rojo y el implante avisa que el enlace neuronal es inestable.](../../img/cyberpsychosis.jpg)
+*Cyberpsicosis: la pantalla se tiñe de rojo y el implante avisa que el enlace neuronal es inestable.*
+
 Con **carga neuronal 80** empieza la cyberpsicosis. **No se va cuando baja la carga**: la única salida es la remisión (más abajo). Si la
 carga baja de 60 los síntomas se calman, pero la condición sigue, y vuelven cuando la carga sube otra vez.
 

@@ -42,6 +42,9 @@ reconnect within **10 minutes** the neural load costs **double**. Reconnecting a
 
 ## Time dilation
 
+![Time dilation on: the afterimages trail behind you while the zombies around you move in slow motion.](../../img/afterimages-day.jpg)
+*Time dilation on: the afterimages trail behind you while the zombies around you move in slow motion.*
+
 While the implant is on, zombies within **16 tiles** (sandbox option) move, turn, attack, fall and get up in slow motion. You
 move faster and attack faster. How strong it is depends on your adaptation level and on the implant:
 
@@ -150,6 +153,12 @@ wear. The item tooltip shows it. A worn implant can be **calibrated** back to 1.
 [Calibration](surgery-and-crafting.md#calibration)), loose or installed. A repaired Prototype 04 can't go below 1.2×.
 
 ## The HUD
+
+![The floating panel of the Prototype 05: Heat, rejection and neural load.](../../img/hud-panel.jpg)
+*The floating panel of the Prototype 05: Heat, rejection and neural load.*
+
+![The Implant tab in the character window (captured on an earlier build; some numbers have changed).](../../img/implant-tab.jpg)
+*The Implant tab in the character window (captured on an earlier build; some numbers have changed).*
 
 - **Floating panel:** Heat, neural load, rejection, coverage and adaptation. It fades when you are not using the implant. It looks
   different per implant: a circuit board for lab, carbon fiber for the XM-1, engraved aluminum for the Mk. II. You can scale it in

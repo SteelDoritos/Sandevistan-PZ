@@ -153,8 +153,25 @@ slowed zombies, the key state machine and the remote players' state. **When a ga
 
 Everything happens on the **player's client**:
 
-1. **Key** (`Input.lua`). A state machine `IDLE → ACTIVATING → ACTIVE → ARMING → ARMED`: a tap switches on or off, holding arms
-   the Overdrive. Key release is detected by polling `isKeyDown` every tick, because `OnKeyPressed` doesn't reliably report it.
+1. **Key** (`Input.lua`). A state machine: a tap switches on or off, holding arms the Overdrive, and holding with the implant off
+   while only stamina or heat blocks it *forces* it straight into Overdrive. Key release is detected by polling `isKeyDown` every
+   tick, because `OnKeyPressed` doesn't reliably report it. With cyberpsychosis, a tap switches off after a short delay and arming
+   or forcing needs a double tap and hold (`PENDING_TAP`, `PENDING_FORCE`, not drawn below).
+
+   ```mermaid
+   stateDiagram-v2
+       [*] --> IDLE
+       IDLE --> ACTIVATING: press, R.activate ok
+       ACTIVATING --> ACTIVE: release (tap)
+       ACTIVATING --> ARMED: still held after HoldToArmSeconds
+       ACTIVE --> ARMING: press
+       ARMING --> IDLE: release, switch off
+       ARMING --> ARMED: still held after HoldToArmSeconds
+       ARMED --> IDLE: press, switch off (or collapse if in Overdrive)
+       IDLE --> FORCING: press, R.canForce ok
+       FORCING --> IDLE: released early
+       FORCING --> ARMED: held Force.HoldSeconds, R.force enters Overdrive
+   ```
 2. **`R.activate`** (`Runtime.lua`). `canActivate` checks a working implant, no vehicle or sleep, no lock, Heat < 100, rejection
    below its limit, enough stamina and the reuse delay. Then it picks the dilation tier from the adaptation level and variant,
    computes the effective tier (momentum, Overdrive, traits, firmware) and calls `SD.activate`.
@@ -173,6 +190,24 @@ Everything happens on the **player's client**:
    the Heat cap for a while. With cyberpsychosis, the collapse can kill.
 7. **Cooling** (`tickCooling`, while off). Heat drops by `S.coolPerSecond` times an **ambient** bonus: cold, a wet body and
    outdoor wind cool faster (bonus only, with a cap). Momentum fades.
+
+```mermaid
+flowchart TD
+    A[Key tap] --> B{R.canActivate}
+    B -- no --> X[Error message]
+    B -- yes --> C[Session active, SD.activate]
+    C --> D[Every tick: Heat up, stamina debt, neural load, momentum, XP]
+    D --> E{Heat 100?}
+    E -- no --> F{Switched off?}
+    F -- no --> D
+    F -- yes --> G[R.deactivate: charge stamina debt]
+    E -- "yes, armed" --> H[Overdrive window]
+    E -- "yes, not armed" --> I[Thermal cut: lock until cool]
+    H --> J[R.collapse: stumble, Heat 100, neural load, rejection, thermal scar]
+    G --> K[Cooling while off]
+    I --> K
+    J --> K
+```
 
 All the formulas are pure functions in `Core.lua` (level from XP, Heat/s, cooling/s, dilation tier, Overdrive window, rejection
 per hour, neural load decay), fed by `Config.lua`. The balance simulator in the development tools reuses those same files to
@@ -253,6 +288,20 @@ What the server owns in Build 42.21, and how the mod deals with it:
 - **Body changes** (pain, wounds, bleeding, health, death) go through a `body` command. Skill level and recipes too.
 - **Timed actions:** `SandevistanAction` lives in `shared/` and is marked `setCustomRemoteTimedActionSync(true)`, so the client
   doesn't send it to the server as a network timed action (a dedicated server doesn't load `client/` and would reject the packet).
+
+```mermaid
+sequenceDiagram
+    participant A as Client A (implant on)
+    participant S as Server (server/Net.lua)
+    participant B as Client B
+    A->>S: active {on, zs}  (heartbeat every second)
+    S->>S: validate 0 < zs ≤ 1
+    S->>B: remoteActive {id, on, zs}
+    B->>B: slow the zombies it simulates around A (expires without heartbeats)
+    A->>S: stats {d, s}  (every 250 ms, only what the mod changed)
+    S->>S: apply to A's stats, clamped
+    S-->>A: the game's own stat sync carries the result back
+```
 
 Commands go `sendClientCommand(player, "Sandevistan", cmd, args)` → server `OnClientCommand` → `sendServerCommand` → client
 `OnServerCommand`. Main ones:

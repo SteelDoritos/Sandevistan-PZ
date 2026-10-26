@@ -125,6 +125,9 @@ Only you hear it and it does not attract zombies.
 
 ## Cyberpsychosis
 
+![Cyberpsychosis: the screen bleeds red and the implant warns that the neural link is unstable.](../../img/cyberpsychosis.jpg)
+*Cyberpsychosis: the screen bleeds red and the implant warns that the neural link is unstable.*
+
 At **neural load 80** cyberpsychosis sets in. It **does not go away when the load drops**: the only way out is remission (below).
 If the load falls under 60 its symptoms quiet down, but the condition stays, and they come back when the load climbs again.
 

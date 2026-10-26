@@ -88,6 +88,9 @@ En *Opciones → Mods → Sandevistan* (cada jugador elige las suyas):
 
 ## Complementos y compatibilidad
 
+![Con el add-on Afterimages with real pose y Viewpoint, las estelas se dibujan en la cámara 3D.](../../img/viewpoint-3d.jpg)
+*Con el add-on Afterimages with real pose y Viewpoint, las estelas se dibujan en la cámara 3D.*
+
 | Mod | Qué agrega |
 |---|---|
 | **Moodle Framework** | Los moodles del mod. Recomendado. |

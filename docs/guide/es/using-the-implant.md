@@ -41,6 +41,9 @@ antes de **10 minutos**, la carga neuronal cuesta el **doble**. Reconectar tambi
 
 ## Dilatación del tiempo
 
+![Dilatación encendida: las estelas quedan detrás de ti mientras los zombis de alrededor se mueven en cámara lenta.](../../img/afterimages-day.jpg)
+*Dilatación encendida: las estelas quedan detrás de ti mientras los zombis de alrededor se mueven en cámara lenta.*
+
 Con el implante encendido, los zombis a menos de **16 tiles** (opción de sandbox) caminan, giran, atacan, caen y se levantan en
 cámara lenta. Tú te mueves más rápido y atacas más rápido. La fuerza depende de tu nivel de adaptación y del implante:
 
@@ -152,6 +155,12 @@ un estudio suman desgaste. El tooltip del ítem lo muestra. Un implante gastado 
 [Calibración](surgery-and-crafting.md#calibración)), suelto o instalado. Un Prototipo 04 reparado no baja de 1,2×.
 
 ## El HUD
+
+![El panel flotante del Prototipo 05: Heat, rechazo y carga neuronal.](../../img/hud-panel.jpg)
+*El panel flotante del Prototipo 05: Heat, rechazo y carga neuronal.*
+
+![La pestaña Implante en la ventana del personaje (capturada en una versión anterior; algunos números cambiaron).](../../img/implant-tab.jpg)
+*La pestaña Implante en la ventana del personaje (capturada en una versión anterior; algunos números cambiaron).*
 
 - **Panel flotante:** Heat, carga neuronal, rechazo, cobertura y adaptación. Se desvanece cuando no usas el implante. Cambia según el
   implante: una placa de circuito en el de laboratorio, fibra de carbono en el XM-1 y aluminio grabado en el Mk. II. Su tamaño se ajusta

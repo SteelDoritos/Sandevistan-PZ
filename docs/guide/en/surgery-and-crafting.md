@@ -34,6 +34,9 @@ level.
 
 ## Installing an implant
 
+![Installing on yourself: guided with the harness or blind in front of a mirror, each with its success chance.](../../img/surgery-menu.jpg)
+*Installing on yourself: guided with the harness or blind in front of a mirror, each with its success chance.*
+
 Right-click the implant in your inventory. You can install it on yourself or on another player standing next to you, who has to
 accept. In every case you need a **suture needle** (or, as when stitching a wound, a **sewing needle and thread** for 3 stitches) and
 **disinfectant** (or alcohol wipes).
